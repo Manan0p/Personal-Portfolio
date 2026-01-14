@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "./toggle";
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { projects } from "@/Data/projects";
 
 export default function Home() {
   return (
@@ -79,24 +80,22 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-7 md:py-14 lg:py-14 bg-background">
+        <section className="w-full py-7 md:py-14 lg:py-14 bg-background border-b border-white/10 bg-gradient-to-brfrom-[#070912] via-[#05070f] to-[#03050b]">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center">
               <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text mb-4">Featured Projects</h2>
-              <div className="text-sm md:text-lg lg:text-xl text-muted-foreground tracking-wide">
+              <div className="text-sm md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-6">
                 Innovative Solutions I've Built
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
-              </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">{features.map((feature,index)=>{
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto ">{projects.map((project,index)=>{
               return(
-                <Card key={index} className={"border-2 hover:border-primary transition-colors duration-300"}>
+                <Card key={index} className={"border-2 hover:border-primary transition-colors duration-300 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]"}>
                   <CardContent className={"text-center flex flex-col items-center"}>
                     <div className="flex flex-col items-center justify-center">
-                      {feature.icon}
-                      <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                      <p className="text-muted-foreground">{feature.description}</p>
+                      {project.icon}
+                      <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                      <p className="text-muted-foreground">{project.description}</p>
                     </div>
                   </CardContent>
                 </Card>

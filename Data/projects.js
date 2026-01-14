@@ -1,27 +1,28 @@
-import { BrainCircuit, Briefcase, LineChart, ScrollText } from "lucide-react";
+import { Bot, ChartColumnDecreasing, HandCoins, ShieldCheck } from "lucide-react";
 
-export const features = [
+export const projects = [
   {
-    icon: <BrainCircuit className="w-10 h-10 mb-4 text-primary" />,
-    title: "AI-Powered Career Guidance",
+    icon: <HandCoins className="w-10 h-10 mb-4 text-primary" />,
+    title: "Splitr",
     description:
-      "Get personalized career advice and insights powered by advanced AI technology.",
+      "A smart expense-sharing app for splitting bills and managing group expenses.",
   },
   {
-    icon: <Briefcase className="w-10 h-10 mb-4 text-primary" />,
-    title: "Interview Preparation",
+    icon: <Bot className="w-10 h-10 mb-4 text-primary" />,
+    title: "Sensai",
     description:
-      "Practice with role-specific questions and get instant feedback to improve your performance.",
+      "An AI-powered career assistant for resumes, cover letters, interview practice, and industry insights.",
   },
   {
-    icon: <LineChart className="w-10 h-10 mb-4 text-primary" />,
-    title: "Industry Insights",
+    icon: <ShieldCheck className="w-10 h-10 mb-4 text-primary" />,
+    title: "JobGuard AI",
     description:
-      "Stay ahead with real-time industry trends, salary data, and market analysis.",
+      "A smart platform that helps users identify and avoid fraudulent job postings.",
   },
   {
-    icon: <ScrollText className="w-10 h-10 mb-4 text-primary" />,
-    title: "Smart Resume Creation",
-    description: "Generate ATS-optimized resumes with AI assistance.",
+    icon: <ChartColumnDecreasing className="w-10 h-10 mb-4 text-primary" />,
+    title: "DealDrop",
+    description:
+      "A smart price-tracking assistant that monitors products and sends instant alerts when prices drop.",
   },
 ];
