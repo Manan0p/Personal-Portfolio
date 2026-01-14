@@ -33,6 +33,13 @@ export default function Home() {
           </div>
         </nav>
       </header>
+      <main>
+        <section>
+          <div>
+            Building Intelligent <br/> & Scalable Systems
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
