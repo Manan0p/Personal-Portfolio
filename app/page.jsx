@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "./toggle";
+import { Card } from "@/components/ui/card";
 
 export default function Home() {
   return (
     <div>
-      <header className="fixed top-0 w-full border-b z-50 backdrop-blur-md supports-backdrop-filter:bg-background/60">
+      <header className="fixed top-0 w-full border-b border-white/10 z-50 backdrop-blur-md supports-backdrop-filter:bg-background/60">
         <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image src="/brand-mark.svg" alt="Logo" width={28} height={28} priority />
@@ -29,12 +30,12 @@ export default function Home() {
             <Button variant="ghost" href="/contact" className="text-md">
               Contact
             </Button>
-            <ModeToggle />
+            {/* <ModeToggle /> */}
           </div>
         </nav>
       </header>
       <main>
-        <section className="relative w-full overflow-hidden py-12 md:py-20 lg:py-24  dark:{from-[#0c0f1c] via-[#0a0d18] to-[#070912] bg-gradient-to-br} border-b">
+        <section className="relative w-full overflow-hidden pt-12 md:pt-20 lg:pt-24 pb-0 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912] border-b border-white/10">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid lg:grid-cols-2 gap-8 items-start">
               <div className="space-y-5 pt-4">
@@ -47,11 +48,19 @@ export default function Home() {
                 <div className="text-sm md:text-lg lg:text-xl text-muted-foreground tracking-wide">
                   Solving real world problems with cutting edge AI and <br /> modern web technologies.
                 </div>
-                <div className="flex items-center space-x-2 md:space-x-4 pt-1">
-                  <Button className={"text-white text-lg bg-blue-600"} size="lg" href="/projects">
+                <div className="flex flex-wrap items-center gap-4 pt-2">
+                  <Button
+                    className="text-white text-lg bg-blue-600 border border-white/25 rounded-2xl px-6 py-3 shadow-sm hover:bg-blue-500"
+                    size="lg"
+                    href="/projects"
+                  >
                     View Projects
                   </Button>
-                  <Button className={"dark:text-white text-black text-lg"} variant="outline" size="lg" href="/">
+                  <Button
+                    className="text-white text-lg bg-transparent border border-white/25 rounded-2xl px-6 py-3 hover:bg-white/5"
+                    size="lg"
+                    href="/"
+                  >
                     Download CV
                   </Button>
                 </div>
@@ -59,7 +68,7 @@ export default function Home() {
 
               <div className="flex justify-center lg:justify-end items-center">
                 <Image
-                  src="/hero.png"
+                  src="/final.png"
                   alt="Futuristic AI servers illustration"
                   width={1200}
                   height={800}
@@ -68,12 +77,6 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
-        </section>
-
-        <section>
-          <div>
-            manan
           </div>
         </section>
       </main>
