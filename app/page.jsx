@@ -7,7 +7,7 @@ export default function Home() {
       <header className="fixed top-0 w-full border-b z-50 backdrop-blur-md supports-backdrop-filter:bg-background/60">
         <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className=" font-extrabold text-lg tracking-wide text-white">
+            <span className=" font-semibold text-lg tracking-wide">
               Manan Lall
             </span>
           </div>
@@ -29,6 +29,7 @@ export default function Home() {
             <Button variant="ghost" href="/" className="text-md">
               Contact
             </Button>
+            <ModeToggle />
           </div>
         </nav>
       </header>
