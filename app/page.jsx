@@ -34,9 +34,14 @@ export default function Home() {
         </nav>
       </header>
       <main>
-        <section>
-          <div>
-            Building Intelligent <br/> & Scalable Systems
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="gradient-title font-bold tracking-tighter text-left text-4xl md:text-5xl lg:text-6xl">
+              Building Intelligent <br/> & Scalable Systems
+            </h2>
+            <div>
+              AI/ML Engineer | Full-Stack Developer
+            </div>
           </div>
         </section>
       </main>

@@ -123,3 +123,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .gradient-title {
+    @apply 
+      bg-[linear-gradient(90deg,#7DD3FC,#A78BFA,#EC4899)]
+      bg-clip-text
+      text-transparent
+      font-extrabold
+      tracking-tighter
+      pb-2
+      pr-2
+      inline-block;
+  }
+}
