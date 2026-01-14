@@ -1,11 +1,17 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
 import { ModeToggle } from "./toggle";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans">
-     <header className=" fixed top-0 w-full z-50 bg-linear-to-b from-[#0B0E14]/85 to-[#0B0E14]/65 backdrop-blur-md border-b border-white/5">
-        <ModeToggle />
+    <div>
+      <header className="fixed top-0 w-full border-b z-50 backdrop-blur-md supports-backdrop-filter:bg-background/60">
+        <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
+          <div>
+            <Button href="/" className="text-lg font-bold">
+              Home
+            </Button>
+          </div>
+        </nav>
       </header>
     </div>
   );
