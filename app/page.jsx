@@ -62,10 +62,10 @@ export default function Home() {
                 <Image
                   src="/hero.png"
                   alt="Futuristic AI servers illustration"
-                  width={900}
-                  height={600}
+                  width={1200}
+                  height={800}
                   priority
-                  className="w-full max-w-lg drop-shadow-[0_20px_60px_rgba(0,0,0,0.65)]"
+                  className="w-full max-w-3xl drop-shadow-[0_20px_60px_rgba(0,0,0,0.65)]"
                 />
               </div>
             </div>
