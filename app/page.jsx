@@ -91,12 +91,17 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto ">{projects.map((project,index)=>{
               return(
                 <Card key={index} className={"border-2 hover:border-primary transition-colors duration-300 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]"}>
-                  <CardContent className={"text-center flex flex-col items-center"}>
-                    <div className="flex flex-col items-center justify-center">
-                      {project.icon}
-                      <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                      <p className="text-muted-foreground">{project.description}</p>
+                  <CardContent className={"flex flex-col"}>
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="flex-1">
+                        <h3 className="text-xl font-bold mb-1">{project.title}</h3>
+                        <p className="text-sm text-muted-foreground">{project.info}</p>
+                      </div>
+                      <div className="flex-shrink-0">
+                        {project.icon}
+                      </div>
                     </div>
+                    <p className="text-muted-foreground text-sm">{project.description}</p>
                   </CardContent>
                 </Card>
               )
