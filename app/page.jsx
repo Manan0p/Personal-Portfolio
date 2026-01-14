@@ -8,9 +8,8 @@ export default function Home() {
       <header className="fixed top-0 w-full border-b z-50 backdrop-blur-md supports-backdrop-filter:bg-background/60">
         <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="font-semibold text-lg tracking-wide">
-              Manan Lall
-            </span>
+            <Image src="/brand-mark.svg" alt="Logo" width={28} height={28} priority />
+            <span className="font-semibold text-lg tracking-wide">Manan Lall</span>
           </div>
 
 
@@ -35,7 +34,7 @@ export default function Home() {
         </nav>
       </header>
       <main>
-        <section className="relative w-full overflow-hidden py-12 md:py-20 lg:py-24 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]">
+        <section className="relative w-full overflow-hidden py-12 md:py-20 lg:py-24  dark:{from-[#0c0f1c] via-[#0a0d18] to-[#070912] bg-gradient-to-br} border-b">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid lg:grid-cols-2 gap-8 items-start">
               <div className="space-y-5 pt-4">
@@ -52,7 +51,7 @@ export default function Home() {
                   <Button className={"text-white text-lg bg-blue-600"} size="lg" href="/projects">
                     View Projects
                   </Button>
-                  <Button className={"text-white text-lg"} variant="outline" size="lg" href="/">
+                  <Button className={"dark:text-white text-black text-lg"} variant="outline" size="lg" href="/">
                     Download CV
                   </Button>
                 </div>
