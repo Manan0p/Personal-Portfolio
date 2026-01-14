@@ -7,16 +7,27 @@ export default function Home() {
       <header className="fixed top-0 w-full border-b z-50 backdrop-blur-md supports-backdrop-filter:bg-background/60">
         <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="inline-block h-3 w-3 rounded-full bg-linear-to-tr from-pink-500 to-purple-500" />
-            <span className="font-inter text-sm font-medium tracking-tight text-white">
+            <span className=" font-extrabold text-lg tracking-wide text-white">
               Manan Lall
             </span>
           </div>
 
 
-          <div>
-            <Button href="/" className="text-lg font-bold">
+          <div className="flex items-center space-x-2 md:space-x-4">
+            <Button variant="ghost" href="/" className="text-md">
               Home
+            </Button>
+            <Button variant="ghost" href="/" className="text-md">
+              Projects
+            </Button>
+            <Button variant="ghost" href="/" className="text-md">
+              Blog
+            </Button>
+            <Button variant="ghost" href="/" className="text-md">
+              About
+            </Button>
+            <Button variant="ghost" href="/" className="text-md">
+              Contact
             </Button>
           </div>
         </nav>
