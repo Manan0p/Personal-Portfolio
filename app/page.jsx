@@ -80,7 +80,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-7 md:py-14 lg:py-14 bg-background border-b border-white/10 bg-gradient-to-brfrom-[#070912] via-[#05070f] to-[#03050b]">
+        <section className="w-full py-7 md:py-14 lg:py-14 bg-background border-b border-white/10 bg-gradient-to-br">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center">
               <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text mb-4">Featured Projects</h2>
@@ -106,6 +106,16 @@ export default function Home() {
                 </Card>
               )
             })}</div>
+          </div>
+        </section>
+        <section className="w-full py-7 md:py-14 lg:py-14 bg-background border-b border-white/10 bg-gradient-to-br from-[#070912] via-[#05070f] to-[#03050b]">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center">
+              <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text mb-4">Featured Projects</h2>
+              <div className="text-sm md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-6">
+                Innovative Solutions I've Built
+              </div>
+            </div>
           </div>
         </section>
       </main>
