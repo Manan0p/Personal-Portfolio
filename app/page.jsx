@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-wrap items-center gap-4 pt-2">
                   <Button
-                    className="text-white text-lg bg-blue-600 border border-white/25 rounded-2xl px-6 py-3 shadow-sm hover:bg-blue-500"
+                    className="text-white text-lg bg-blue-600 border border-white/25 rounded-2xl px-6 py-3 shadow-sm hover:bg-blue-700"
                     size="lg"
                     href="/projects"
                   >
@@ -137,6 +137,9 @@ export default function Home() {
               <div className="text-lg md:text-xl lg:text-2xl tracking-wide mb-6">
                 Let's Build Something Amazing!
               </div>
+              <Button className="text-white font-semibold tracking-normal text-lg bg-[linear-gradient(90deg,#2563EB,#7C3AED,#BE185D)] rounded-lg text-center px-9 py-6 shadow-sm" size="lg" href="/t">
+                Download Resume
+              </Button>
             </div>
           </div>
         </section>
