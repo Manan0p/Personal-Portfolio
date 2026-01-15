@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ModeToggle } from "./toggle";
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { projects } from "@/Data/projects";
+import { expertise } from "@/Data/expertise";
 
 export default function Home() {
   return (
@@ -115,6 +116,14 @@ export default function Home() {
               <div className="text-sm md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-6">
                 Skills That Drive Impact
               </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {expertise.map(({icon,title})=>(
+                <div key={icon} className="flex flex-col items-center space-y-4">
+                  <div className="flex h-12 w-12 items-center justify-center text-xl font-bold border-2 hover:border-primary transition-colors duration-300">{icon}</div>
+                  <h3 className="text-xl font-bold">{title}</h3>
+                </div>
+              ))}
             </div>
           </div>
         </section>
