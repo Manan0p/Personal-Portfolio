@@ -4,6 +4,7 @@ import { ModeToggle } from "./toggle";
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { projects } from "@/Data/projects";
 import { expertise } from "@/Data/expertise";
+import { contact } from "@/Data/contact";
 
 export default function Home() {
   return (
@@ -136,6 +137,18 @@ export default function Home() {
               </div>
               <div className="text-lg md:text-xl lg:text-2xl tracking-wide mb-6">
                 Let's Build Something Amazing!
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto mb-8 gap-10">
+                {contact.map(({id,logo,title})=>{
+                  return(
+                    <Card key={id} className={"border-2 hover:border-primary transition-colors duration-300 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]"}>
+                      <CardContent className={"flex flex-col items-center"}>
+                        <div className="flex h-26 w-28 items-center justify-center-safe">{logo}</div>
+                        <h3 className="text-xl tracking-normal text-center">{title}</h3>
+                      </CardContent>
+                    </Card>
+                  )
+                })}
               </div>
               <Button className="text-white font-semibold tracking-normal text-lg bg-[linear-gradient(90deg,#2563EB,#7C3AED,#BE185D)] rounded-lg text-center px-9 py-6 shadow-sm" size="lg" href="/t">
                 Download Resume

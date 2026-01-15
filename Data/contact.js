@@ -13,7 +13,7 @@ export const contact = [
   },
   {
     id: "3",
-    logo: <Linkedin className="w-16 h-16 text-primary" />,
+    logo: <Linkedin strokeWidth={1.15} className="w-16 h-16 text-primary" />,
     title: "linkedin.com/in/mananlall",
   },
 ];
