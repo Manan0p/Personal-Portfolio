@@ -47,7 +47,7 @@ export default function Home() {
                 <div className="text-lg md:text-xl lg:text-2xl font-medium tracking-wide">
                   AI/ML Engineer | Full-Stack Developer
                 </div>
-                <div className="text-sm md:text-lg lg:text-xl text-muted-foreground tracking-wide">
+                <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide">
                   Solving real world problems with cutting edge AI and <br /> modern web technologies.
                 </div>
                 <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -85,7 +85,7 @@ export default function Home() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center">
               <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text mb-4">Featured Projects</h2>
-              <div className="text-sm md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-6">
+              <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-6">
                 Innovative Solutions I've Built
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function Home() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center">
               <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text mb-4">My Expertise</h2>
-              <div className="text-sm md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-6">
+              <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-6">
                 Skills That Drive Impact
               </div>
             </div>
@@ -130,18 +130,13 @@ export default function Home() {
         <section className="w-full py-7 md:py-14 lg:py-14 bg-background border-b border-white/10 bg-gradient-to-br]">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center">
-              <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text mb-4">My Expertise</h2>
-              <div className="text-sm md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-6">
-                Skills That Drive Impact
+              <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text mb-4">Let's Connect</h2>
+              <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-6">
+                Get In Touch
               </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {expertise.map(({id,logo,title})=>(
-                <div key={id} className="flex flex-col items-center space-y-4 ">
-                  <div className="flex h-26 w-28 items-center justify-center-safe border-2 hover:border-primary transition-colors duration-300  bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]">{logo}</div>
-                  <h3 className="text-lg font-semibold tracking-normal mb-6">{title}</h3>
-                </div>
-              ))}
+              <div className="text-lg md:text-xl lg:text-2xl tracking-wide mb-6">
+                Let's Build Something Amazing!
+              </div>
             </div>
           </div>
         </section>
