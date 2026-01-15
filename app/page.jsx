@@ -59,13 +59,14 @@ export default function Home() {
                   >
                     View Projects
                   </Button>
-                  <Button
-                    className="text-white text-lg bg-transparent border border-white/25 rounded-2xl px-6 py-3 hover:bg-white/5"
-                    size="lg"
-                    href="/"
-                  >
-                    Download CV
-                  </Button>
+                  <a href="/Manan_Lall_CV.pdf" download="Manan_Lall_CV.pdf">
+                    <Button
+                      className="text-white text-lg bg-transparent border border-white/25 rounded-2xl px-6 py-3 hover:bg-white/5"
+                      size="lg"
+                    >
+                      Download CV
+                    </Button>
+                  </a>
                 </div>
               </div>
 
@@ -152,9 +153,11 @@ export default function Home() {
                   )
                 })}
               </div>
-              <Button className="text-white font-semibold tracking-normal text-lg bg-[linear-gradient(90deg,#2563EB,#7C3AED,#BE185D)] rounded-lg text-center px-9 py-6 shadow-sm" size="lg" href="/t">
-                Download Resume
-              </Button>
+              <a href="/Manan_Lall_CV.pdf" download="Manan_Lall_CV.pdf">
+                <Button className="text-white font-semibold tracking-normal text-lg bg-[linear-gradient(90deg,#2563EB,#7C3AED,#BE185D)] rounded-lg text-center px-9 py-6 shadow-sm" size="lg">
+                  Download Resume
+                </Button>
+              </a>
             </div>
           </div>
         </section>
