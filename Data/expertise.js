@@ -1,15 +1,18 @@
 export const expertise = [
   {
     icon: "1",
-    title: "Create or Join a Group",
+    title: "Machine Learning & NLP",
   },
   {
     icon: "2",
-    title: "Add Expenses",
+    title: "Full-Stack Development",
   },
   {
     icon: "3",
-    title: "Settle Up",
+    title: "Real-Time Systems",
   },
-  
+  {
+    icon: "3",
+    title: "Secure Authentication",
+  },
 ];
