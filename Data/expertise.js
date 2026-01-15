@@ -1,18 +1,20 @@
+import { Activity, BrainCircuit, Layers, UserLock } from "lucide-react";
+
 export const expertise = [
   {
-    icon: "1",
+    logo: <BrainCircuit className="w-16 h-16 text-primary" />,
     title: "Machine Learning & NLP",
   },
   {
-    icon: "2",
+    logo: <Layers className="w-16 h-16 text-primary" />,
     title: "Full-Stack Development",
   },
   {
-    icon: "3",
+    logo: <Activity className="w-16 h-16 text-primary" />,
     title: "Real-Time Systems",
   },
   {
-    icon: "3",
+    logo: <UserLock className="w-16 h-16 text-primary" />,
     title: "Secure Authentication",
   },
 ];

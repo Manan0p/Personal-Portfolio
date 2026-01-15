@@ -109,7 +109,7 @@ export default function Home() {
             })}</div>
           </div>
         </section>
-        <section className="w-full py-7 md:py-14 lg:py-14 bg-background border-b border-white/10 bg-gradient-to-br from-[#070912] via-[#05070f] to-[#03050b]">
+        <section className="w-full py-7 md:py-14 lg:py-14 bg-background border-b border-white/10 bg-gradient-to-br]">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center">
               <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text mb-4">My Expertise</h2>
@@ -118,10 +118,10 @@ export default function Home() {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {expertise.map(({icon,title})=>(
-                <div key={icon} className="flex flex-col items-center space-y-4">
-                  <div className="flex h-12 w-12 items-center justify-center text-xl font-bold border-2 hover:border-primary transition-colors duration-300">{icon}</div>
-                  <h3 className="text-xl font-bold">{title}</h3>
+              {expertise.map(({logo,title})=>(
+                <div key={logo} className="flex flex-col items-center space-y-4 ">
+                  <div className="flex h-26 w-28 items-center justify-center-safe border-2 hover:border-primary transition-colors duration-300  bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]">{logo}</div>
+                  <h3 className="text-lg font-semibold tracking-normal mb-6">{title}</h3>
                 </div>
               ))}
             </div>
