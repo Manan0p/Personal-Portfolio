@@ -129,7 +129,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-lg font-semibold tracking-normal">{title}</h3>
                   {index !== expertise.length - 1 && (
-                    <div className="hidden lg:block absolute right-[-12px] top-1/2 -translate-y-1/2 h-14 w-px bg-white/30" />
+                    <div className="hidden lg:block absolute right-[-12px] top-1/2 -translate-y-1/2 h-18 w-px bg-white/30" />
                   )}
                 </div>
               ))}
@@ -156,24 +156,28 @@ export default function Home() {
               <div className="mt-2 mb-10 text-lg md:text-xl font-medium text-white/90">
                 Let's Build Something Amazing!
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto mb-8 gap-10 ">
-                {contact.map(({logo,title,link},index)=>{
-                  return(
-                    <a key={index} href={link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-                      <div className="relative flex flex-col items-center gap-3">
-                        <div className="group relative h-20 w-20 flex items-center justify-center rounded-2xl">
-                          <img src={logo} alt={title} className="h-auto w-auto object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.06]"/>
+              <div className="relative max-w-6xl mx-auto my-12">
+                <div className="absolute -top-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+                <div className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto mb-8 gap-10 ">
+                  {contact.map(({logo,title,link},index)=>{
+                    return(
+                      <a key={index} href={link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                        <div className="group relative flex flex-col items-center gap-3">
+                          <div className="group relative h-20 w-20 flex items-center justify-center rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
+                            <img src={logo} alt={title} className="h-auto w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-110"/>
+                          </div>
+                          <p className="text-sm md:text-base text-muted-foreground">
+                            {title}
+                          </p>
+                          {index !== contact.length - 1 && (
+                            <div className="hidden lg:block absolute right-[-32px] top-1/2 -translate-y-1/2 h-24 w-px bg-white/30" />
+                          )}
                         </div>
-                        <p className="text-sm md:text-base text-muted-foreground">
-                          {title}
-                        </p>
-                        {index !== contact.length - 1 && (
-                          <div className="hidden lg:block absolute right-[-32px] top-1/2 -translate-y-1/2 h-14 w-px bg-white/30" />
-                        )}
-                      </div>
-                    </a>
-                  )
-                })}
+                      </a>
+                    )
+                  })}
+                </div>
+                <div className="absolute -bottom-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
               </div>
               <a href="/Manan_Lall_CV.pdf" download="Manan_Lall_CV.pdf">
                 <Button className="text-white mt-4 bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] transition-all" size="lg">
