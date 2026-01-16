@@ -4,7 +4,7 @@ export const expertise = [
   {
     id: "1",
     logo: "/expertise/AIML.png",
-    title: "AI/ML",
+    title: "AI & ML",
   },
   {
     id: "2",
