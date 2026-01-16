@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -33,6 +35,33 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
+            <header className="fixed top-0 w-full border-b border-white/10 z-50 backdrop-blur-md supports-backdrop-filter:bg-background/60">
+              <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Image src="/brand-mark.svg" alt="Logo" width={28} height={28} priority />
+                  <span className="font-semibold text-lg tracking-wide">Manan Lall</span>
+                </div>
+
+                <div className="flex items-center space-x-2 md:space-x-4">
+                  <Button variant="ghost" href="/" className="text-md">
+                    Home
+                  </Button>
+                  <Button variant="ghost" href="/projects" className="text-md">
+                    Projects
+                  </Button>
+                  <Button variant="ghost" href="/blog" className="text-md">
+                    Blog
+                  </Button>
+                  <Button variant="ghost" href="/about" className="text-md">
+                    About
+                  </Button>
+                  <Button variant="ghost" href="/contact" className="text-md">
+                    Contact
+                  </Button>
+                  {/* <ModeToggle /> */}
+                </div>
+              </nav>
+            </header>
             {children}
           </ThemeProvider>
       </body>

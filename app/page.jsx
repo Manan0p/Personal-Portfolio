@@ -9,34 +9,6 @@ import { contact } from "@/Data/contact";
 export default function Home() {
   return (
     <div>
-      <header className="fixed top-0 w-full border-b border-white/10 z-50 backdrop-blur-md supports-backdrop-filter:bg-background/60">
-        <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Image src="/brand-mark.svg" alt="Logo" width={28} height={28} priority />
-            <span className="font-semibold text-lg tracking-wide">Manan Lall</span>
-          </div>
-
-
-          <div className="flex items-center space-x-2 md:space-x-4">
-            <Button variant="ghost" href="/" className="text-md">
-              Home
-            </Button>
-            <Button variant="ghost" href="/projects" className="text-md">
-              Projects
-            </Button>
-            <Button variant="ghost" href="/blog" className="text-md">
-              Blog
-            </Button>
-            <Button variant="ghost" href="/about" className="text-md">
-              About
-            </Button>
-            <Button variant="ghost" href="/contact" className="text-md">
-              Contact
-            </Button>
-            {/* <ModeToggle /> */}
-          </div>
-        </nav>
-      </header>
       <main>
         <section className="relative w-full overflow-hidden pt-12 md:pt-20 lg:pt-24 pb-0 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912] border-b border-white/10">
           <div className="container mx-auto px-4 md:px-6">
