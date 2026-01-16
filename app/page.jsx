@@ -153,15 +153,20 @@ export default function Home() {
                 Let's Build Something Amazing!
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto mb-8 gap-10 ">
-                {contact.map(({id,logo,title,link})=>{
+                {contact.map(({logo,title,link},index)=>{
                   return(
-                    <a key={id} href={link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-                      <Card className={"border-2 hover:border-primary transition-colors duration-300 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]"}>
-                        <CardContent className={"flex flex-col items-center"}>
-                          <div className="flex h-26 w-28 items-center justify-center-safe">{logo}</div>
-                          <h3 className="text-xl tracking-normal text-center mb-6">{title}</h3>
-                        </CardContent>
-                      </Card>
+                    <a key={index} href={link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                      <div className="relative flex flex-col items-center gap-3">
+                        <div className="h-14 w-14 flex items-center justify-center rounded-lg bg-white/10 backdrop-blur-md">
+                          {logo}
+                        </div>
+                        <p className="text-sm md:text-base text-muted-foreground">
+                          {title}
+                        </p>
+                        {index !== contact.length - 1 && (
+                          <div className="hidden lg:block absolute right-[-24px] top-1/2 -translate-y-1/2 h-12 w-px bg-white/20" />
+                        )}
+                      </div>
                     </a>
                   )
                 })}
