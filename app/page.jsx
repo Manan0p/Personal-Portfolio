@@ -11,7 +11,11 @@ export default function Home() {
   return (
     <div>
       <main>
-        <section className="relative w-full overflow-hidden pt-12 md:pt-20 lg:pt-24 pb-0 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912] border-b border-white/10">
+        <section className="relative w-full overflow-hidden pt-12 md:pt-20 lg:pt-28 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+          <div className="pointer-events-none absolute inset-0 z-0">
+            <div className="absolute right-[-10%] top-[10%] h-[80%] w-[60%] bg-gradient-to-bl from-violet-500/30 via-indigo-500/20 to-transparent blur-3xl"/>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(99,102,241,0.15),transparent_60%)]"/>
+          </div>
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid lg:grid-cols-2 gap-8 items-start">
               <div className="space-y-5 pt-4">
@@ -24,10 +28,11 @@ export default function Home() {
                 <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide">
                   Solving real world problems with cutting edge AI and <br /> modern web technologies.
                 </div>
+                
                 <div className="flex flex-wrap items-center gap-4 pt-2">
                   <Link href="/projects">
                     <Button
-                      className="text-white text-lg bg-blue-600 border border-white/25 rounded-2xl px-6 py-3 shadow-sm hover:bg-blue-700"
+                      className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
                       size="lg"
                     >
                       View Projects
@@ -35,7 +40,7 @@ export default function Home() {
                   </Link>
                   <a href="/Manan_Lall_CV.pdf" download="Manan_Lall_CV.pdf">
                     <Button
-                      className="text-white text-lg bg-transparent border border-white/25 rounded-2xl px-6 py-3 hover:bg-white/5"
+                      className="text-white text-lg bg-transparent border border-white/25 rounded-lg px-6 py-3 hover:bg-white/5"
                       size="lg"
                     >
                       Download CV
@@ -51,11 +56,13 @@ export default function Home() {
                   width={1200}
                   height={800}
                   priority
-                  className="w-full max-w-3xl drop-shadow-[0_20px_60px_rgba(0,0,0,0.65)]"
+                  className="w-full max-w-3xl drop-shadow-[0_30px_80px_rgba(0,0,0,0.7)] animate-float translate-y-[-10px]"
                 />
               </div>
             </div>
           </div>
+          <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/70 to-transparent" />
+          <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-violet-400/40 to-transparent blur-sm" />
         </section>
         <section className="w-full py-7 md:py-14 lg:py-14 bg-background border-b border-white/10 bg-gradient-to-br">
           <div className="container mx-auto px-4 md:px-6">
@@ -85,7 +92,7 @@ export default function Home() {
                 </Link>
               )
             })}</div>
-          </div>
+          </div>          
         </section>
         <section className="w-full py-7 md:py-14 lg:py-14 bg-background border-b border-white/10 bg-gradient-to-br]">
           <div className="container mx-auto px-4 md:px-6">
