@@ -2,35 +2,35 @@ import { Bot, ChartColumnDecreasing, HandCoins, ShieldCheck } from "lucide-react
 
 export const projects = [
   {
-    icon: <HandCoins className="w-10 h-10 mb-4 text-primary" />,
+    icon: "/projects/splitr.png",
     title: "Splitr",
-    info:"AI Expense Manager",
+    info:"Expense Manager",
     description:
-      "A smart expense-sharing app for splitting bills and managing group expenses.",
+      "A smart, intuitive, modern expense-sharing app for splitting bills and managing group expenses.",
     link: "https://github.com/Manan0p/splitr", // Replace with your actual link
   },
   {
-    icon: <Bot className="w-10 h-10 mb-4 text-primary" />,
+    icon: "/projects/sensai.png",
     title: "Sensai",
-    info:"AI Career Coach",
+    info:"Career Coach",
     description:
-      "An AI-powered career assistant for resumes, cover letters, interview practice, and industry insights.",
+      "An AI-powered career assistant for cover letters, interview practice, reumes and industry insights.",
     link: "https://github.com/Manan0p/sensai", // Replace with your actual link
   },
   {
-    icon: <ShieldCheck className="w-10 h-10 mb-4 text-primary" />,
+    icon: "/projects/jobguard.png",
     title: "JobGuard AI",
     info:"Fake Job Detector",
     description:
-      "A smart platform that helps users identify and avoid fraudulent job postings.",
+      "A smart, reliable, user focused platform that helps users identify and avoid fraudulent job postings..",
     link: "https://github.com/Manan0p/JobGuard-AI", // Replace with your actual link
   },
-  {
-    icon: <ChartColumnDecreasing className="w-10 h-10 mb-4 text-primary" />,
-    title: "DealDrop",
-    info:"Price Tracker",
-    description:
-      "A smart price-tracking assistant that monitors products and sends instant alerts when prices drop.",
-    link: "https://github.com/Manan0p/dealdrop", // Replace with your actual link
-  },
+  // {
+  //   icon: <ChartColumnDecreasing className="w-10 h-10 mb-4 text-primary" />,
+  //   title: "DealDrop",
+  //   info:"Price Tracker",
+  //   description:
+  //     "A smart price-tracking assistant that monitors products and sends instant alerts when prices drop.",
+  //   link: "https://github.com/Manan0p/dealdrop", // Replace with your actual link
+  // },
 ];

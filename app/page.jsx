@@ -64,29 +64,40 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/70 to-transparent" />
           <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-violet-400/40 to-transparent blur-sm" />
         </section>
-        <section className="w-full py-7 md:py-14 lg:py-14 bg-background border-b border-white/10 bg-gradient-to-br">
+        <section className="w-full py-16 md:py-24 lg:py-28 border-b border-white/10 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]">
+          <div className="pointer-events-none absolute inset-0">
+            <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/40 to-transparent" />
+            <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/40 to-transparent" />
+          </div>
           <div className="container mx-auto px-4 md:px-6">
-            <div className="text-center">
-              <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text mb-4">Featured Projects</h2>
-              <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-6">
-                Innovative Solutions I've Built
+            <div className="text-center mb-10">
+              <div className="flex items-center justify-center gap-4 mb-2">
+                <div className="h-px w-32 bg-white/50" />
+                <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text">
+                  Featured Projects
+                </h2>
+                <div className="h-px w-32 bg-white/50" />
               </div>
+              <p className="text-md md:text-lg text-muted-foreground tracking-wide">
+                Innovative Solutions I&apos;ve Built
+              </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto ">{projects.map((project,index)=>{
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 ">{projects.map((project,index)=>{
               return(
                 <Link key={index} href={project.link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-                <Card key={index} className={"border-2 hover:border-primary transition-colors duration-300 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]"}>
-                  <CardContent className={"flex flex-col"}>
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className="flex-1">
-                        <h3 className="text-xl font-bold mb-1">{project.title}</h3>
-                        <p className="text-sm text-muted-foreground">{project.info}</p>
+                <Card className="group relative h-[230px] overflow-hidden rounded-2xl bg-white/7 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
+                  <CardContent className={"relative flex h-full overflow-hidden px-5"}>
+                      <div className="relative z-10 flex flex-col max-w-[60%]">
+                        <h3 className="text-xl font-bold leading-tight mb-1">{project.title}</h3>
+                        <p className="text-lg text-muted-foreground">{project.info}</p>
+                        <br />
+                        <div className="text-muted-foreground text-sm leading-relaxed">{project.description}</div>
                       </div>
-                      <div className="flex-shrink-0">
-                        {project.icon}
+                      <div className="absolute right-4 top-0 h-full w-[42%] flex items-center justify-center pointer-events-none">
+                        <div className="group-hover:scale-[1.03] absolute inset-0 rounded-full bg-violet-500/20 blur-3xl" />
+                        <img src={project.icon} alt={project.title} className="h-[92%] w-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.04]"/>
                       </div>
-                    </div>
-                    <p className="text-muted-foreground text-sm">{project.description}</p>
                   </CardContent>
                 </Card>
                 </Link>
