@@ -3,22 +3,22 @@ import { Activity, BrainCircuit, Layers, UserLock } from "lucide-react";
 export const expertise = [
   {
     id: "1",
-    logo: <BrainCircuit className="w-16 h-16 text-primary" />,
-    title: "Machine Learning & NLP",
+    logo: "/expertise/AIML.png",
+    title: "AI/ML",
   },
   {
     id: "2",
-    logo: <Layers className="w-16 h-16 text-primary" />,
-    title: "Full-Stack Development",
+    logo: "/expertise/NLP.png",
+    title: "Applied NLP & LLMs",
   },
   {
     id: "3",
-    logo: <Activity className="w-16 h-16 text-primary" />,
-    title: "Real-Time Systems",
+    logo: "/expertise/Full.png",
+    title: "Full-Stack Development",
   },
   {
     id: "4",
-    logo: <UserLock className="w-16 h-16 text-primary" />,
+    logo: "/expertise/Auth.png",
     title: "Secure Authentication",
   },
 ];

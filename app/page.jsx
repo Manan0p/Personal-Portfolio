@@ -124,8 +124,8 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {expertise.map(({id,logo,title}, index)=>(
                 <div key={id} className="relative flex flex-col items-center space-y-3  ">
-                  <div className="group overflow-hidden relative flex h-24 w-24 items-center justify-center rounded-xl bg-white/3 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]  bg-gradient-to-br from-violet-500/10 via-transparent to-transparent">
-                    {logo}
+                  <div className="group overflow-hidden relative flex h-24 w-24 items-center justify-center rounded-xl bg-white/7 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]  bg-gradient-to-br from-violet-500/10 via-transparent to-transparent">
+                    <img src={logo} alt={title} className="h-[92%] w-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.04]" />
                   </div>
                   <h3 className="text-lg font-semibold tracking-normal">{title}</h3>
                   {index !== expertise.length - 1 && (
