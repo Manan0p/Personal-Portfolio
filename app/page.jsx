@@ -5,6 +5,7 @@ import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader,
 import { projects } from "@/Data/projects";
 import { expertise } from "@/Data/expertise";
 import { contact } from "@/Data/contact";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,13 +25,14 @@ export default function Home() {
                   Solving real world problems with cutting edge AI and <br /> modern web technologies.
                 </div>
                 <div className="flex flex-wrap items-center gap-4 pt-2">
-                  <Button
-                    className="text-white text-lg bg-blue-600 border border-white/25 rounded-2xl px-6 py-3 shadow-sm hover:bg-blue-700"
-                    size="lg"
-                    href="/projects"
-                  >
-                    View Projects
-                  </Button>
+                  <Link href="/projects">
+                    <Button
+                      className="text-white text-lg bg-blue-600 border border-white/25 rounded-2xl px-6 py-3 shadow-sm hover:bg-blue-700"
+                      size="lg"
+                    >
+                      View Projects
+                    </Button>
+                  </Link>
                   <a href="/Manan_Lall_CV.pdf" download="Manan_Lall_CV.pdf">
                     <Button
                       className="text-white text-lg bg-transparent border border-white/25 rounded-2xl px-6 py-3 hover:bg-white/5"
@@ -65,6 +67,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto ">{projects.map((project,index)=>{
               return(
+                <Link key={index} href={project.link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 <Card key={index} className={"border-2 hover:border-primary transition-colors duration-300 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]"}>
                   <CardContent className={"flex flex-col"}>
                     <div className="flex items-start gap-4 mb-4">
@@ -79,6 +82,7 @@ export default function Home() {
                     <p className="text-muted-foreground text-sm">{project.description}</p>
                   </CardContent>
                 </Card>
+                </Link>
               )
             })}</div>
           </div>
