@@ -7,7 +7,7 @@ export const projects = [
     info:"Expense Manager",
     description:
       "A smart, intuitive, modern expense-sharing app for splitting bills and managing group expenses.",
-    link: "https://github.com/Manan0p/splitr", // Replace with your actual link
+    link: "https://github.com/Manan0p/splitr",
   },
   {
     icon: "/projects/sensai.png",
@@ -15,7 +15,7 @@ export const projects = [
     info:"Career Coach",
     description:
       "An AI-powered career assistant for cover letters, interview practice, reumes and industry insights.",
-    link: "https://github.com/Manan0p/sensai", // Replace with your actual link
+    link: "https://github.com/Manan0p/sensai", 
   },
   {
     icon: "/projects/jobguard.png",
@@ -23,7 +23,7 @@ export const projects = [
     info:"Fake Job Detector",
     description:
       "A smart, reliable, user focused platform that helps users identify and avoid fraudulent job postings..",
-    link: "https://github.com/Manan0p/JobGuard-AI", // Replace with your actual link
+    link: "https://github.com/Manan0p/JobGuard-AI", 
   },
   // {
   //   icon: <ChartColumnDecreasing className="w-10 h-10 mb-4 text-primary" />,
