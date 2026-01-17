@@ -8,7 +8,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <section className="relative w-full  pt-12 md:pt-20 lg:pt-24 pb-0 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912] border-b border-white/10">
+      <section className="relative noise w-full  pt-12 md:pt-20 lg:pt-24 pb-0 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912] border-b border-white/10">
         {/* GLOW LAYER */}
 <div className="pointer-events-none absolute inset-0 z-0">
 
