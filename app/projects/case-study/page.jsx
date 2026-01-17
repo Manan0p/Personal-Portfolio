@@ -1,75 +1,81 @@
 import { Button } from "@/components/ui/button";
+import { main_projects } from "@/Data/main_projects";
 import { Home } from "lucide-react";
 import Link from "next/link";
 
 export default function Page() {
     return (
         <div>
-            <section className="relative w-full overflow-hidden pt-6 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
-                <div className="pointer-events-none absolute inset-0 z-0">
-                    <div className="absolute right-[-10%] bottom-[-35%] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle_at_30%_30%,
-                                    rgba(236,72,153,0.85),rgba(168,85,247,0.6),rgba(99,102,241,0.35),transparent_65%)] blur-[140px]"/>
-                    <div className="absolute right-0 bottom-0 h-full w-[55%] bg-gradient-to-bl from-pink-500/35 via-violet-500/25 to-transparent blur-2xl"/>
-                    <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-violet-400/80 to-transparent"/>
-                </div>
-
-                <div className="pointer-events-none absolute inset-0 
-                                bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
-
-                <div className="relative z-10 container mx-auto px-4 md:px-6">
-                    <div className="grid lg:grid-cols-2 gap-6 items-center">
-                        <div className="space-y-5 max-w-lg">
-                            <div className="text-sm md:text-md lg:text-lg text-muted-foreground tracking-wide">
-                                <Home className="inline mb-1 mr-1 h-4 w-4"/>
-                                Home / Projects / Splitr {}
-                            </div>
-                            <h2 className="text-5xl md:text-6xl font-semibold text-white">
-                                Splitr
-                            </h2>
-
-                            <p className="text-xl md:text-2xl text-violet-300">
-                                Smart Expense Splitting
-                            </p>
-
-                            <p className="text-base md:text-lg text-white/70 leading-relaxed">
-                                An AI-powered expense-sharing web app that makes splitting bills,
-                                tracking balances, and settling up effortless for users.
-                            </p>
-                            
-                            <div className="flex items-center gap-3 pt-3">
-                                <Link href="https://splitr-sigma-eight.vercel.app/" target="_blank">
-                                    <Button
-                                        className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
-                                        size="lg"
-                                    >
-                                        Live Demo
-                                    </Button>
-                                </Link>
-
-                                <Link href="https://github.com/Manan0p/splitr" target="_blank">
-                                    <Button
-                                        className="text-white text-lg bg-transparent border border-white/25 rounded-lg px-6 py-3 hover:bg-white/5"
-                                        size="lg"
-                                    >
-                                        GitHub Repo
-                                    </Button>
-                                </Link>
+            {main_projects.map((main_projects,index)=>{
+                return(
+                    <div key={index}>
+                        <section className="relative w-full overflow-hidden pt-6 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+                            <div className="pointer-events-none absolute inset-0 z-0">
+                                <div className="absolute right-[-10%] bottom-[-35%] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle_at_30%_30%,
+                                                rgba(236,72,153,0.85),rgba(168,85,247,0.6),rgba(99,102,241,0.35),transparent_65%)] blur-[140px]"/>
+                                <div className="absolute right-0 bottom-0 h-full w-[55%] bg-gradient-to-bl from-pink-500/35 via-violet-500/25 to-transparent blur-2xl"/>
+                                <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-violet-400/80 to-transparent"/>
                             </div>
 
-                            <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
-                        </div>
-                        <div className="relative hidden lg:flex items-center justify-end">
-                            <img
-                                src="/mp/splitr-mockup.png"
-                                alt="Splitr Dashboard"
-                                className="
-                                    w-[520px] md:w-[640px] lg:w-[720px]
-                                    drop-shadow-[0_40px_80px_rgba(168,85,247,0.35)]
-                                    select-none pointer-events-none"/>
-                        </div>
-                    </div>  
-                </div>
-            </section>
+                            <div className="pointer-events-none absolute inset-0 
+                                            bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
+
+                            <div className="relative z-10 container mx-auto px-4 md:px-6">
+                                <div className="grid lg:grid-cols-2 gap-6 items-center">
+                                    <div className="space-y-5 max-w-lg">
+                                        <div className="text-sm md:text-md lg:text-lg text-muted-foreground tracking-wide">
+                                            <Home className="inline mb-1 mr-1 h-4 w-4"/>
+                                            Home / Projects / {main_projects.title}
+                                        </div>
+                                        <h2 className="text-5xl md:text-6xl font-semibold text-white">
+                                            {main_projects.title}
+                                        </h2>
+
+                                        <p className="text-xl md:text-2xl text-violet-300">
+                                            {main_projects.info}
+                                        </p>
+
+                                        <p className="text-base md:text-lg text-white/70 leading-relaxed">
+                                            {main_projects.description}
+                                        </p>
+                                        
+                                        <div className="flex items-center gap-3 pt-3">
+                                            <Link href={main_projects.live_link} target="_blank">
+                                                <Button
+                                                    className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
+                                                    size="lg"
+                                                >
+                                                    Live Demo
+                                                </Button>
+                                            </Link>
+
+                                            <Link href={main_projects.github_link} target="_blank">
+                                                <Button
+                                                    className="text-white text-lg bg-transparent border border-white/25 rounded-lg px-6 py-3 hover:bg-white/5"
+                                                    size="lg"
+                                                >
+                                                    GitHub Repo
+                                                </Button>
+                                            </Link>
+                                        </div>
+
+                                        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
+                                    </div>
+                                    <div className="relative hidden lg:flex items-center justify-end">
+                                        <img
+                                            src={main_projects.image}
+                                            alt={main_projects.alt}
+                                            className="
+                                                w-[520px] md:w-[640px] lg:w-[720px]
+                                                drop-shadow-[0_40px_80px_rgba(168,85,247,0.35)]
+                                                select-none pointer-events-none"/>
+                                    </div>
+                                </div>  
+                            </div>
+                        </section>
+                    </div>
+                )
+            })}
         </div>
     )
 }
