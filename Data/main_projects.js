@@ -7,5 +7,14 @@ export const main_projects = [
         alt: "Splitr Dashboard",
         live_link: "https://splitr-sigma-eight.vercel.app/",
         github_link: "https://github.com/Manan0p/splitr"
-    }
+    },
+    // {
+    //     title: "Sensai",
+    //     info: "AI Career Coach",
+    //     description: "An AI-driven career coaching platform that provides personalized guidance, resume optimization, and interview preparation to help users advance their careers.",
+    //     image: "/mp/sensai-mockup.png",
+    //     alt: "Sensai Dashboard",
+    //     live_link: "https://sensai-lyart.vercel.app/",
+    //     github_link: "https://github.com/Manan0p/sensai"
+    // }
 ]
