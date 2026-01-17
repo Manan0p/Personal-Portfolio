@@ -21,19 +21,19 @@ export default function Page() {
                         <div className="space-y-5 max-w-lg">
                             <div className="text-sm md:text-md lg:text-lg text-muted-foreground tracking-wide">
                                 <Home className="inline mb-1 mr-1 h-4 w-4"/>
-                                Home / Projects / Splitr
+                                Home / Projects / Splitr {}
                             </div>
                             <h2 className="text-5xl md:text-6xl font-semibold text-white">
                                 Splitr
                             </h2>
 
                             <p className="text-xl md:text-2xl text-violet-300">
-                            Smart Expense Splitting
+                                Smart Expense Splitting
                             </p>
 
                             <p className="text-base md:text-lg text-white/70 leading-relaxed">
-                            An AI-powered expense-sharing web app that makes splitting bills,
-                            tracking balances, and settling up effortless for groups.
+                                An AI-powered expense-sharing web app that makes splitting bills,
+                                tracking balances, and settling up effortless for users.
                             </p>
                             
                             <div className="flex items-center gap-3 pt-3">
