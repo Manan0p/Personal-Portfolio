@@ -8,43 +8,13 @@ const page = () => {
   return (
     <div>
       <section className="relative noise w-full  pt-12 md:pt-20 lg:pt-24 pb-0 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912] border-b border-white/10">
-        {/* GLOW LAYER */}
         <div className="pointer-events-none absolute inset-0 z-0">
-
-        {/* INTENSE CORE BLOOM */}
-  <div
-    className="absolute right-[-10%] bottom-[-35%]
-               h-[680px] w-[680px] rounded-full
-               bg-[radial-gradient(circle_at_30%_30%,
-                    rgba(236,72,153,0.85),
-                    rgba(168,85,247,0.6),
-                    rgba(99,102,241,0.35),
-                    transparent_65%)]
-               blur-[140px]"
-  />
-
-  {/* SECONDARY COLOR WASH */}
-  <div
-    className="absolute right-0 bottom-0 h-full w-[55%]
-               bg-gradient-to-bl
-               from-pink-500/35
-               via-violet-500/25
-               to-transparent
-               blur-2xl"
-  />
-
-  {/* STRONG HORIZON LINE */}
-  <div
-    className="absolute bottom-0 left-0 w-full h-[3px]
-               bg-gradient-to-r
-               from-transparent
-               via-violet-400/80
-               to-transparent"
-  />
-</div>
-
-        <div className="pointer-events-none absolute inset-0 opacity-[0.035]
-                bg-[url('/noise.png')] mix-blend-overlay" />
+          <div className="absolute right-[-10%] bottom-[-35%] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle_at_30%_30%,
+                          rgba(236,72,153,0.85),rgba(168,85,247,0.6),rgba(99,102,241,0.35),transparent_65%)] blur-[140px]"/>
+          <div className="absolute right-0 bottom-0 h-full w-[55%] bg-gradient-to-bl from-pink-500/35 via-violet-500/25 to-transparent blur-2xl"/>
+          <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-violet-400/80 to-transparent"/>
+        </div>
+        <div className="pointer-events-none absolute inset-0 opacity-[0.035] bg-[url('/noise.png')] mix-blend-overlay" />
         <div className="relative z-10 container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             <div className="space-y-5 pt-4">
