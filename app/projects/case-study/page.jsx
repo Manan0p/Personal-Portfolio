@@ -5,26 +5,16 @@ import Link from "next/link";
 export default function Page() {
     return (
         <div>
-            <section className="relative noise w-full pt-6 md:pt-10 lg:pt-12 pb-6 overflow-hidden
-                                bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912] border-b border-white/10">
+            <section className="relative w-full overflow-hidden pt-6 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
                 <div className="pointer-events-none absolute inset-0 z-0">
-                    <div className="absolute right-[5%] bottom-[10%]
-                                    h-[520px] w-[520px]
-                                    rounded-full
-                                    bg-[radial-gradient(circle_at_40%_40%,
-                                    rgba(168,85,247,0.65),
-                                    rgba(99,102,241,0.4),
-                                    transparent_60%) ]
-                                    blur-[90px]" 
-                    />
-
-                    <div className="absolute bottom-0 left-0 w-full h-[3px] 
-                                    bg-gradient-to-r from-transparent via-violet-400/80 to-transparent" 
-                    />
+                    <div className="absolute right-[-10%] bottom-[-35%] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle_at_30%_30%,
+                                    rgba(236,72,153,0.85),rgba(168,85,247,0.6),rgba(99,102,241,0.35),transparent_65%)] blur-[140px]"/>
+                    <div className="absolute right-0 bottom-0 h-full w-[55%] bg-gradient-to-bl from-pink-500/35 via-violet-500/25 to-transparent blur-2xl"/>
+                    <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-violet-400/80 to-transparent"/>
                 </div>
 
                 <div className="pointer-events-none absolute inset-0 
-                                bg-gradient-to-r from-black/80 via-black/40 to-transparent z-[1]" />
+                                bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
 
                 <div className="relative z-10 container mx-auto px-4 md:px-6">
                     <div className="grid lg:grid-cols-2 gap-6 items-center">
@@ -49,32 +39,19 @@ export default function Page() {
                             <div className="flex items-center gap-3 pt-3">
                                 <Link href="https://splitr-sigma-eight.vercel.app/" target="_blank">
                                     <Button
-                                    className="
-                                        h-11 px-5
-                                        rounded-md
-                                        text-sm font-medium text-white
-                                        bg-gradient-to-r from-indigo-600 via-violet-600 to-pink-600
-                                        shadow-[0_8px_30px_rgba(139,92,246,0.45)]
-                                        hover:brightness-110 transition
-                                    "
+                                        className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
+                                        size="lg"
                                     >
-                                    Live Demo
+                                        Live Demo
                                     </Button>
                                 </Link>
 
                                 <Link href="https://github.com/Manan0p/splitr" target="_blank">
                                     <Button
-                                    className="
-                                        h-11 px-4
-                                        rounded-md
-                                        text-sm font-medium
-                                        text-white/80
-                                        border border-white/15
-                                        bg-white/5
-                                        hover:bg-white/10 transition
-                                    "
+                                        className="text-white text-lg bg-transparent border border-white/25 rounded-lg px-6 py-3 hover:bg-white/5"
+                                        size="lg"
                                     >
-                                    GitHub Repo
+                                        GitHub Repo
                                     </Button>
                                 </Link>
                             </div>
