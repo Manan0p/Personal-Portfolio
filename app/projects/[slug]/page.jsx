@@ -8,6 +8,33 @@ function renderParagraphOrPoints(value) {
 
     const baseClass = "text-base md:text-lg text-white/70 leading-relaxed"
 
+    // Supports: { intro?: string, points?: string[]|string, outro?: string }
+    if (typeof value === "object" && !Array.isArray(value)) {
+        const intro = typeof value.intro === "string" ? value.intro : ""
+        const outro = typeof value.outro === "string" ? value.outro : ""
+        const pointsRaw = value.points
+
+        const points = Array.isArray(pointsRaw)
+            ? pointsRaw.filter(Boolean)
+            : typeof pointsRaw === "string"
+                ? pointsRaw.split("\n").map((l) => l.trim()).filter(Boolean)
+                : []
+
+        return (
+            <div className={baseClass}>
+                {intro ? <p className="mb-3">{intro}</p> : null}
+                {points.length ? (
+                    <ul className="list-disc pl-5 space-y-2">
+                        {points.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                ) : null}
+                {outro ? <p className="mt-3">{outro}</p> : null}
+            </div>
+        )
+    }
+
     if (Array.isArray(value)) {
         return (
             <ul className={`${baseClass} list-disc pl-5 space-y-2`}>
@@ -19,6 +46,67 @@ function renderParagraphOrPoints(value) {
     }
 
     if (typeof value === "string") {
+        // If you use bullets like:
+        // Intro line\n- point 1\n- point 2\n\nOutro line
+        // ...we'll segregate intro/bullets/outro.
+        const rawLines = value.split("\n").map((l) => l.replace(/\s+$/g, ""))
+
+        const bulletRe = /^(-|\*|•)\s+/u
+        let inBullets = false
+        let bulletsClosed = false
+
+        const introLines = []
+        const bullets = []
+        const outroLines = []
+
+        for (const rawLine of rawLines) {
+            const trimmed = rawLine.trim()
+
+            if (!trimmed) {
+                if (inBullets) bulletsClosed = true
+                continue
+            }
+
+            const isBullet = bulletRe.test(trimmed)
+
+            if (isBullet && !bulletsClosed) {
+                inBullets = true
+                bullets.push(trimmed.replace(bulletRe, ""))
+                continue
+            }
+
+            if (!inBullets) {
+                introLines.push(trimmed)
+                continue
+            }
+
+            if (bulletsClosed) {
+                outroLines.push(trimmed)
+                continue
+            }
+
+            // Continuation line: attach to previous bullet (useful for wrapped lines)
+            if (bullets.length) {
+                bullets[bullets.length - 1] = `${bullets[bullets.length - 1]} ${trimmed}`
+            } else {
+                introLines.push(trimmed)
+            }
+        }
+
+        if (bullets.length) {
+            return (
+                <div className={baseClass}>
+                    {introLines.length ? <p className="mb-3">{introLines.join(" ")}</p> : null}
+                    <ul className="list-disc pl-5 space-y-2">
+                        {bullets.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                    {outroLines.length ? <p className="mt-3">{outroLines.join(" ")}</p> : null}
+                </div>
+            )
+        }
+
         const lines = value
             .split("\n")
             .map((line) => line.trim())
@@ -151,9 +239,7 @@ export default async function Page({params}) {
                             <p className="text-xl font-semibold md:text-2xl text-violet-100">
                                 Overview
                             </p>
-                            <p className="text-base md:text-lg text-white/70 leading-relaxed">
-                                {project.overview}
-                            </p>
+                            {renderParagraphOrPoints(project.overview)}
                             <p className="text-xl font-semibold md:text-2xl text-violet-100">
                                 The Problem
                             </p>
