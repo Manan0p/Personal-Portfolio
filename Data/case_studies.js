@@ -1,4 +1,4 @@
-import { BarChart3, BellRing, Brain, Contact, FileSearch, Filter, Layers, LayoutDashboard, Lightbulb, MessageSquareText, MoonStar, Receipt, Scale, Sparkles, Split, Tags, Target, TicketPercent, TrendingUp, Users } from "lucide-react";
+import { BarChart3, BellRing, Brain, Building2, Contact, FileSearch, Filter, Gauge, Info, Layers, LayoutDashboard, Lightbulb, Lock, MessageSquareText, MoonStar, Receipt, Scale, ShieldAlert, Sparkles, Split, Tags, Target, TicketPercent, TrendingUp, Users, Zap } from "lucide-react";
 
 export const caseStudies = [
   {
@@ -134,8 +134,42 @@ export const caseStudies = [
       outro: "",
     },
     key_features: [
-      { icon : "" , heading: "", oneliner: "", }      
-    ],
+  {
+    icon: <ShieldAlert />,
+    heading: "Fraud Detection Engine",
+    oneliner: "Uses machine learning models to identify scam patterns in job listings."
+  },
+  {
+    icon: <Gauge />,
+    heading: "Risk Scoring System",
+    oneliner: "Assigns a confidence score indicating the likelihood of a posting being fraudulent."
+  },
+  {
+    icon: <Building2 />,
+    heading: "Company Verification",
+    oneliner: "Checks company metadata and consistency to detect impersonation or fake employers."
+  },
+  {
+    icon: <Info />,
+    heading: "Explainable Insights",
+    oneliner: "Highlights the exact signals that triggered a fraud warning for transparency."
+  },
+  {
+    icon: <Zap />,
+    heading: "Real-Time Analysis",
+    oneliner: "Instantly evaluates job listings without requiring manual review."
+  },
+  {
+    icon: <LayoutDashboard />,
+    heading: "User-Friendly Interface",
+    oneliner: "Designed for non-technical users with clear visuals and actionable feedback."
+  },
+  {
+    icon: <Lock />,
+    heading: "Privacy-Focused",
+    oneliner: "Does not store sensitive user data or personal job application details."
+  }
+]
   },
   {
     slug: "dealdrop",
