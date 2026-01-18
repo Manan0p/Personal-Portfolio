@@ -230,7 +230,7 @@ export default async function Page({params}) {
                 </div>
             </section>
 
-            <section className="relative w-full overflow-hidden pt-6 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+            <section className="relative w-full overflow-hidden pt-6 pb-10 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
                 <div className="pointer-events-none absolute inset-0 
                                 bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
                 <div className="relative z-10 container mx-auto px-4 md:px-6">
@@ -262,11 +262,13 @@ export default async function Page({params}) {
 
                         </div>
                         <div className="relative space-y-10 max-w-lg lg:pl-10">
-                            <div className="hidden lg:block absolute left-[-36px] top-0 h-full w-px
-                                            bg-gradient-to-b from-transparent via-white/30 to-transparent" />
+                            <div className="hidden lg:block absolute left-[-32px] top-0 h-full w-px
+                                            bg-gradient-to-b from-transparent via-violet-400/25 to-transparent" />
+                            <div className=" hidden lg:block absolute left-[-33px] top-0 h-full w-[3px]
+                                             bg-gradient-to-b from-transparent via-violet-500/10 to-transparent 
+                                             blur-md opacity-70" />
                             <h3 className="text-lg md:text-2xl font-semibold text-violet-200 tracking-wide
                                            border-b border-white/10 pb-2 w-fit">
-
                                 Key Features
                             </h3>
                             <div className="text-base md:text-lg text-white/70 leading-relaxed">
@@ -289,17 +291,18 @@ export default async function Page({params}) {
                                                border-b border-white/10">
                                     Links
                                 </h3>
-                                <div className="space-y-3">
+                                <div className="pt-3 items-center space-y-3 gap-4">
                                     {project.live_link ? (
                                         <a href={project.live_link} target="_blank" rel="noreferrer">
                                             <Button
-                                                className="w-full justify-start gap-3 text-white text-lg bg-blue-600 border border-white/25 rounded-lg shadow-sm hover:bg-blue-700"
+                                                className="mb-5 w-full justify-start gap-3 text-white text-lg bg-blue-600 border border-white/25 rounded-lg shadow-sm hover:bg-blue-700"
                                                 size="lg"
                                             >
                                                 Live Demo
-                                                <span className="ml-auto text-sm text-white/70 truncate">
+                                                <span className="ml-auto text-sm text-white truncate">
                                                     {project.live_link}
                                                 </span>
+                                                <span className="text-lg">›</span>
                                             </Button>
                                         </a>
                                     ) : null}
