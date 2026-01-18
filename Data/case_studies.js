@@ -117,7 +117,7 @@ export const caseStudies = [
     alt: "JobGuard AI",
     live_link: "https://manan0p-jobguard-ai.hf.space/",
     github_link: "https://github.com/Manan0p/JobGuard-AI",
-    overview: "",
+    overview: "JobGuard AI is an intelligent platform that helps users identify, analyze, and avoid fraudulent job postings by detecting scam patterns in real time using machine learning and rule-based validation. Designed with clarity, trust, and transparency at its core, the platform enables job seekers to make informed decisions before engaging with potentially harmful or misleading opportunities, creating a safer and more confident job-hunting experience.",
     problem: {
       intro: "",
       points: [],
