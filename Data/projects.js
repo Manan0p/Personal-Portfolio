@@ -25,12 +25,4 @@ export const projects = [
       "A smart, reliable, user focused platform that helps users identify and avoid fraudulent job postings..",
     link: "https://github.com/Manan0p/JobGuard-AI", 
   },
-  // {
-  //   icon: <ChartColumnDecreasing className="w-10 h-10 mb-4 text-primary" />,
-  //   title: "DealDrop",
-  //   info:"Price Tracker",
-  //   description:
-  //     "A smart price-tracking assistant that monitors products and sends instant alerts when prices drop.",
-  //   link: "https://github.com/Manan0p/dealdrop", // Replace with your actual link
-  // },
 ];
