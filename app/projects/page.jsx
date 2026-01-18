@@ -61,7 +61,7 @@ const page = () => {
                           ))}
                         </div>
                       </div>
-                      <a href="\projects\case-study" className="shrink-0">
+                      <a href={`/projects/${showcase.slug}`} className="shrink-0">
                         <Button className="text-white mt-4 bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] transition-all" size="lg">
                           View Case Study
                           <span className="text-lg">›</span>
