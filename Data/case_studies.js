@@ -113,9 +113,9 @@ export const caseStudies = [
     description:
       "A smart, reliable, user-focused platform that helps users identify and avoid fraudulent job postings.",
     stack: ["Flask", "Scikit-learn", "SQLite", "Joblib", "Gunicorn"],
-    image: "/projects/jobguard.png",
+    image: "/mp/jobguard-mockup.png",
     alt: "JobGuard AI",
-    live_link: "https://splitr-sigma-eight.vercel.app/",
+    live_link: "https://manan0p-jobguard-ai.hf.space/",
     github_link: "https://github.com/Manan0p/JobGuard-AI",
     overview: "",
     problem: {
