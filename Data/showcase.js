@@ -1,7 +1,7 @@
 
 export const showcase = [
   {
-    slug: "Splitr",
+    slug: "splitr",
     title: "Splitr",
     description:
       "A smart, intuitive, modern expense-sharing app for splitting bills and managing group expenses.",

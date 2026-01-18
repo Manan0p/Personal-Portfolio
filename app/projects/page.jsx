@@ -14,7 +14,7 @@ const page = () => {
           <div className="absolute right-0 bottom-0 h-full w-[55%] bg-gradient-to-bl from-pink-500/35 via-violet-500/25 to-transparent blur-2xl"/>
           <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-violet-400/80 to-transparent"/>
         </div>
-        <div className="pointer-events-none absolute inset-0 opacity-[0.035] bg-[url('/noise.png')] mix-blend-overlay" />
+        <div className="pointer-events-none absolute inset-0 opacity-[0.035] mix-blend-overlay" />
         <div className="relative z-10 container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             <div className="space-y-5 pt-4">
@@ -61,7 +61,7 @@ const page = () => {
                           ))}
                         </div>
                       </div>
-                      <a href={`/projects/${showcase.slug}`} className="shrink-0">
+                      <a href={`/projects/${showcase.slug.toLowerCase()}`} className="shrink-0">
                         <Button className="text-white mt-4 bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] transition-all" size="lg">
                           View Case Study
                           <span className="text-lg">›</span>
