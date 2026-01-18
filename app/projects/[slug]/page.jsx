@@ -2,8 +2,15 @@ import { Button } from "@/components/ui/button";
 import { main_projects } from "@/Data/main_projects";
 import { Home } from "lucide-react";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
-export default function Page() {
+export default function Page({params}) {
+    const project = main_projects.find(
+        p => p.slug === params.slug
+    )
+
+    if (!project) notFound()
+
     return (
         <div>
             {main_projects.map((main_projects,index)=>{
