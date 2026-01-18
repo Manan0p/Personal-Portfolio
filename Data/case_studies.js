@@ -1,4 +1,4 @@
-import { BellRing, Brain, Contact, MoonStar, Receipt, Scale, Split, Tags, Users } from "lucide-react";
+import { BellRing, Brain, Contact, FileSearch, LayoutDashboard, Lightbulb, MessageSquareText, MoonStar, Receipt, Scale, Sparkles, Split, Tags, Target, TrendingUp, Users } from "lucide-react";
 
 export const caseStudies = [
   {
@@ -66,12 +66,44 @@ export const caseStudies = [
     alt: "Sensai",
     live_link: "https://sensai-lyart.vercel.app/",
     github_link: "https://github.com/Manan0p/sensai",
-    overview: "",
-    problem: "",
-    solution: "",
-    experience: "",
+    overview: "SensAI is an AI-powered career assistant designed to help students and professionals improve their resumes, prepare for interviews, and gain clarity about their career path. It acts as a personalized guide by analyzing resumes, simulating interviews, and offering actionable insights tailored to individual goals and skill levels.",
+    problem: {
+      intro: "Career preparation is often fragmented and overwhelming:",
+      points: ["Resumes lack structure, clarity, or relevance to job roles",
+              "Interview preparation is generic and not role-specific",
+              "Users don’t receive actionable feedback on strengths and weaknesses",
+              "Career guidance is scattered across multiple platforms",
+              "Progress tracking and improvement are unclear"],
+      outro: "This leaves candidates underprepared and unsure about where they stand.",
+    },
+    solution: {
+      intro: "SensAI provides an end-to-end AI-driven career preparation workflow:",
+      points: ["Upload resume → Analyze strengths & gaps",
+              "Generate role-specific interview questions",
+              "Practice interviews with AI feedback",
+              "Get improvement suggestions in real time",
+              "Track progress and readiness over time"],
+      outro: "By combining resume intelligence with interview simulation, SensAI creates a focused and practical preparation experience.",
+    },
+    experience: {
+      intro: "Users can:",
+      points: ["Upload and analyze resumes instantly",
+        "Receive AI-generated suggestions to improve content and structure",
+        "Practice mock interviews tailored to specific roles",
+        "Get instant feedback on answers, communication, and clarity",
+        "Track performance improvements across sessions",
+        "Prepare confidently without switching platforms"
+      ],
+      outro: "The experience is designed to be simple, focused, and distraction-free.",
+    },
     key_features: [
-      { icon : "" , heading: "", oneliner: "", }      
+      { icon : <FileSearch /> , heading: "AI Resume Analysis", oneliner: "Analyzes resumes for structure, clarity, keywords, and role relevance.", },
+      { icon : <MessageSquareText /> , heading: "Interview Practice", oneliner: "Generates role-specific interview questions and simulates real interview scenarios.", },
+      { icon : <Sparkles /> , heading: "Smart Feedback System", oneliner: "Provides instant, actionable feedback on answers and communication quality.", },
+      { icon : <Lightbulb /> , heading: "Career Insights", oneliner: "Offers suggestions on skills to improve and roles to target based on profile data.", },
+      { icon : <TrendingUp /> , heading: "Progress Tracking", oneliner: "Tracks performance improvements across resume updates and interview sessions.", },
+      { icon : <Target /> , heading: "Role-Based Preparation", oneliner: "Customizes interview questions and guidance based on job role and experience level.", },
+      { icon : <LayoutDashboard /> , heading: "Modern, Minimal UI", oneliner: "Clean and focused interface designed to reduce cognitive overload.", }
     ],
   },
   {
@@ -86,9 +118,21 @@ export const caseStudies = [
     live_link: "https://splitr-sigma-eight.vercel.app/",
     github_link: "https://github.com/Manan0p/JobGuard-AI",
     overview: "",
-    problem: "",
-    solution: "",
-    experience: "",
+    problem: {
+      intro: "",
+      points: [],
+      outro: "",
+    },
+    solution: {
+      intro: "",
+      points: [],
+      outro: "",
+    },
+    experience: {
+      intro: "",
+      points: [],
+      outro: "",
+    },
     key_features: [
       { icon : "" , heading: "", oneliner: "", }      
     ],
@@ -105,9 +149,21 @@ export const caseStudies = [
     live_link: "https://dealdrop-one.vercel.app/",
     github_link: "https://github.com/Manan0p/dealdrop",
     overview: "",
-    problem: "",
-    solution: "",
-    experience: "",
+    problem: {
+      intro: "",
+      points: [],
+      outro: "",
+    },
+    solution: {
+      intro: "",
+      points: [],
+      outro: "",
+    },
+    experience: {
+      intro: "",
+      points: [],
+      outro: "",
+    },
     key_features: [
       { icon : "" , heading: "", oneliner: "", }      
     ],
