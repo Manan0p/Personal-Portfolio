@@ -1,5 +1,6 @@
 export const main_projects = [
     {
+        slug: "Splitr",
         title: "Splitr",
         info: "Smart Expense Splitting",
         description: "An AI-powered expense-sharing web app that makes splitting bills, tracking balances, and settling up effortless for users.",
@@ -9,6 +10,7 @@ export const main_projects = [
         github_link: "https://github.com/Manan0p/splitr"
     },
     // {
+    //     slug: "Sensai",
     //     title: "Sensai",
     //     info: "AI Career Coach",
     //     description: "An AI-driven career coaching platform that provides personalized guidance, resume optimization, and interview preparation to help users advance their careers.",
