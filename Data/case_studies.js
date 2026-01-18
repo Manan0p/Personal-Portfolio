@@ -1,4 +1,4 @@
-import { BellRing, Brain, Contact, FileSearch, LayoutDashboard, Lightbulb, MessageSquareText, MoonStar, Receipt, Scale, Sparkles, Split, Tags, Target, TrendingUp, Users } from "lucide-react";
+import { BarChart3, BellRing, Brain, Contact, FileSearch, Filter, Layers, LayoutDashboard, Lightbulb, MessageSquareText, MoonStar, Receipt, Scale, Sparkles, Split, Tags, Target, TicketPercent, TrendingUp, Users } from "lucide-react";
 
 export const caseStudies = [
   {
@@ -176,13 +176,41 @@ export const caseStudies = [
       outro: "The experience is designed to feel fast, lightweight, and focused on value—no distractions, no spam.",
     },
     key_features: [
-      { icon : "" , heading: "Deal Aggregation", oneliner: "Collects the best deals and coupons from multiple online stores into one unified platform.", },
-      { icon : "" , heading: "Price Comparison", oneliner: "Shows side-by-side price comparisons so users can instantly identify the best offer.", },
-      { icon : "" , heading: "Coupon Discovery", oneliner: "Automatically surfaces applicable coupons and discounts without manual searching.", },
-      { icon : "" , heading: "Smart Filtering", oneliner: "Filter deals by category, discount percentage, platform, or popularity.", },
-      { icon : "" , heading: "Trending Deals", oneliner: "Highlights popular and high-value deals based on user interest and activity.", },
-      { icon : "" , heading: "Clean & Minimal UI", oneliner: "A distraction-free interface focused purely on savings and usability.", },
-      { icon : "" , heading: "Dark / Light Mode", oneliner: "Seamless experience across themes for comfortable browsing", },
-    ],
+  {
+    icon: <Layers />,
+    heading: "Deal Aggregation",
+    oneliner: "Collects the best deals and coupons from multiple online stores in one place.",
+  },
+  {
+    icon: <BarChart3 />,
+    heading: "Price Comparison",
+    oneliner: "Compare prices across platforms to instantly find the best offer.",
+  },
+  {
+    icon: <TicketPercent />,
+    heading: "Coupon Discovery",
+    oneliner: "Automatically surfaces applicable coupons without manual searching.",
+  },
+  {
+    icon: <Filter />,
+    heading: "Smart Filtering",
+    oneliner: "Filter deals by category, discount percentage, or popularity.",
+  },
+  {
+    icon: <TrendingUp />,
+    heading: "Trending Deals",
+    oneliner: "Discover popular and high-value deals in real time.",
+  },
+  {
+    icon: <LayoutDashboard />,
+    heading: "Clean & Minimal UI",
+    oneliner: "A distraction-free interface focused purely on savings.",
+  },
+  {
+    icon: <MoonStar />,
+    heading: "Dark / Light Mode",
+    oneliner: "Seamless experience across light and dark themes.",
+  },
+]  
   },
 ];
