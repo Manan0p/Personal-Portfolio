@@ -1,8 +1,9 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { showcase } from '@/Data/showcase'
 import { Home } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
+import { caseStudies } from '@/Data/case_studies'
 
 const page = () => {
   return (
@@ -39,7 +40,7 @@ const page = () => {
             <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 gap-6 max-w-auto mx-auto ">{showcase.map((showcase,index)=>{
+            <div className="grid grid-cols-1 gap-6 max-w-auto mx-auto ">{caseStudies.map((project,index)=>{
               return(
                 <Card key={index} className="after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
                                              backdrop-blur-xl border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)]
@@ -49,24 +50,24 @@ const page = () => {
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
                   <CardContent className="relative flex items-center justify-between gap-8 px-6 py-6">
                       <div className="flex flex-col gap-3 max-w-[75%]">
-                        <h3 className="text-3xl mb-1 font-semibold">{showcase.title}</h3>
+                        <h3 className="text-3xl mb-1 font-semibold">{project.title}</h3>
                         <p className="text-base text-white/90 leading-relaxed mb-3 line-clamp-2">
-                          {showcase.description}
+                          {project.description}
                         </p>
                         <div className="flex flex-wrap gap-2 pt-2">
-                          {showcase.stack.map((tech, i) => (
+                          {project.stack?.map((tech, i) => (
                             <span key={i} className="rounded-md bg-white/10 px-3 py-1 text-md text-white border border-white/10">
                               {tech}
                             </span>
                           ))}
                         </div>
                       </div>
-                      <a href={`/projects/${showcase.slug.toLowerCase()}`} className="shrink-0">
+                      <Link href={`/projects/${project.slug}`} className="shrink-0">
                         <Button className="text-white mt-4 bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] transition-all" size="lg">
                           View Case Study
                           <span className="text-lg">›</span>
                         </Button>
-                      </a>
+                      </Link>
                   </CardContent>
                 </Card>
               )

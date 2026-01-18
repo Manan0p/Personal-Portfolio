@@ -1,18 +1,34 @@
 import { Button } from "@/components/ui/button";
-import { main_projects } from "@/Data/main_projects";
+import { caseStudies } from "@/Data/case_studies";
 import { Home } from "lucide-react";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default async function Page({params}) {
-    const rawSlug = params?.slug
-    const slug = String(
-    Array.isArray(rawSlug) ? rawSlug[0] : rawSlug
-    ).toLowerCase()
+export function generateStaticParams() {
+    return caseStudies.map((p) => ({ slug: p.slug }))
+}
 
-    const project = main_projects.find(
-        (p) => String(p.slug).toLowerCase() === slug
-    )
+export async function generateMetadata({ params }) {
+    const resolvedParams = await params
+    const rawSlug = resolvedParams?.slug
+    const slug = String(Array.isArray(rawSlug) ? rawSlug[0] : rawSlug || "").toLowerCase()
+    const project = caseStudies.find((p) => String(p.slug).toLowerCase() === slug)
+
+    if (!project) return { title: "Project Not Found" }
+
+    return {
+        title: `${project.title} | Projects`,
+        description: project.description,
+    }
+}
+
+export default async function Page({params}) {
+    const resolvedParams = await params
+    const rawSlug = resolvedParams?.slug
+    const slug = String(Array.isArray(rawSlug) ? rawSlug[0] : rawSlug || "").toLowerCase()
+
+    if (!slug) notFound()
+
+    const project = caseStudies.find((p) => String(p.slug).toLowerCase() === slug)
 
     if (!project) notFound()
 
@@ -49,36 +65,42 @@ export default async function Page({params}) {
                                 </p>
                                         
                                 <div className="flex items-center gap-3 pt-3">
-                                    <Link href={project.live_link} target="_blank">
-                                        <Button
-                                            className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
-                                            size="lg"
-                                        >
-                                            Live Demo
-                                        </Button>
-                                    </Link>
+                                    {project.live_link ? (
+                                        <a href={project.live_link} target="_blank" rel="noreferrer">
+                                            <Button
+                                                className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
+                                                size="lg"
+                                            >
+                                                Live Demo
+                                            </Button>
+                                        </a>
+                                    ) : null}
 
-                                    <Link href={project.github_link} target="_blank">
-                                        <Button
-                                            className="text-white text-lg bg-transparent border border-white/25 rounded-lg px-6 py-3 hover:bg-white/5"
-                                            size="lg"
-                                        >
-                                            GitHub Repo
-                                        </Button>
-                                    </Link>
+                                    {project.github_link ? (
+                                        <a href={project.github_link} target="_blank" rel="noreferrer">
+                                            <Button
+                                                className="text-white text-lg bg-transparent border border-white/25 rounded-lg px-6 py-3 hover:bg-white/5"
+                                                size="lg"
+                                            >
+                                                GitHub Repo
+                                            </Button>
+                                        </a>
+                                    ) : null}
                                 </div>
 
                                 <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                             </div>
-                            <div className="relative hidden lg:flex items-center justify-end">
-                                <img
-                                    src={project.image}
-                                    alt={project.alt}
-                                    className="
-                                        w-[520px] md:w-[640px] lg:w-[720px]
-                                        drop-shadow-[0_40px_80px_rgba(168,85,247,0.35)]
-                                        select-none pointer-events-none"/>
-                            </div>
+                            {project.image ? (
+                                <div className="relative hidden lg:flex items-center justify-end">
+                                    <img
+                                        src={project.image}
+                                        alt={project.alt || project.title}
+                                        className="
+                                            w-[520px] md:w-[640px] lg:w-[720px]
+                                            drop-shadow-[0_40px_80px_rgba(168,85,247,0.35)]
+                                            select-none pointer-events-none"/>
+                                </div>
+                            ) : null}
                         </div>  
                     </div>
                 </section>
