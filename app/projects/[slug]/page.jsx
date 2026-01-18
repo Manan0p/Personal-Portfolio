@@ -56,7 +56,7 @@ export default async function Page({params}) {
                                 {project.title}
                             </h2>
 
-                            <p className="text-xl md:text-2xl text-violet-300">
+                            <p className="text-xl font-semibold md:text-2xl text-violet-300">
                                 {project.info}
                             </p>
 
@@ -101,6 +101,91 @@ export default async function Page({params}) {
                                         select-none pointer-events-none"/>
                             </div>
                         ) : null}
+                    </div>  
+                </div>
+            </section>
+
+            <section className="relative w-full overflow-hidden pt-6 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+                <div className="pointer-events-none absolute inset-0 
+                                bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
+                <div className="relative z-10 container mx-auto px-4 md:px-6">
+                    <div className="grid lg:grid-cols-2 gap-6 items-center">
+                        <div className="space-y-5 max-w-lg">
+                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
+                                Overview
+                            </p>
+                            <p className="text-base md:text-lg text-white/70 leading-relaxed">
+                                {project.overview}
+                            </p>
+                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
+                                The Problem
+                            </p>
+                            <p className="text-base md:text-lg text-white/70 leading-relaxed">
+                                {project.problem}
+                            </p>
+                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
+                                The Solution
+                            </p>
+                            <p className="text-base md:text-lg text-white/70 leading-relaxed">
+                                {project.solution}
+                            </p>
+                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
+                                Product Experience
+                            </p>
+                            <p className="text-base md:text-lg text-white/70 leading-relaxed">
+                                {project.experience}
+                            </p>
+                            <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
+                        </div>
+                        <div className="space-y-5 max-w-lg">
+                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
+                                Key Features
+                            </p>
+                            <div className="text-base md:text-lg text-white/70 leading-relaxed">
+                                {project.key_features.map((feature, index) => (
+                                    <div key={index} className="mb-4">
+                                        <h3 className="text-lg font-semibold text-white/90 flex items-center gap-2">
+                                            {feature.icon ? (
+                                                <span className="inline-flex items-center [&>svg]:h-6 [&>svg]:w-6 [&>svg]:shrink-0">
+                                                    {feature.icon}
+                                                </span>
+                                            ) : null}
+                                            <span>{feature.heading}</span>
+                                        </h3>
+                                        <p className="text-white/70">{feature.oneliner}</p>
+                                    </div>
+                                ))}
+                            </div>
+                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
+                                Links
+                            </p>
+                            <div className="flex items-center gap-3 pt-3">
+                                {project.live_link ? (
+                                    <a href={project.live_link} target="_blank" rel="noreferrer">
+                                        <Button
+                                            className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
+                                            size="lg"
+                                        >
+                                            Live Demo
+                                        </Button>
+                                    </a>
+                                ) : null}
+                                
+
+                                {project.github_link ? (
+                                    <a href={project.github_link} target="_blank" rel="noreferrer">
+                                        <Button
+                                            className="text-white text-lg bg-transparent border border-white/25 rounded-lg px-6 py-3 hover:bg-white/5"
+                                            size="lg"
+                                        >
+                                            GitHub Repo
+                                        </Button>
+                                    </a>
+                                ) : null}
+                            </div>
+                            
+                            <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
+                        </div>
                     </div>  
                 </div>
             </section>
