@@ -234,56 +234,41 @@ export default async function Page({params}) {
                 <div className="pointer-events-none absolute inset-0 
                                 bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
                 <div className="relative z-10 container mx-auto px-4 md:px-6">
-                    <div className="grid lg:grid-cols-2 gap-6 items-center">
-                        <div className="space-y-5 max-w-lg">
-                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
-                                Overview
-                            </p>
-                            {renderParagraphOrPoints(project.overview)}
-                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
-                                The Solution
-                            </p>
-                            {renderParagraphOrPoints(project.solution)}
-                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
-                                Product Experience
-                            </p>
-                            {renderParagraphOrPoints(project.experience)}
-                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
-                                Links
-                            </p>
-                            <div className="flex items-center gap-3 pt-3">
-                                {project.live_link ? (
-                                    <a href={project.live_link} target="_blank" rel="noreferrer">
-                                        <Button
-                                            className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
-                                            size="lg"
-                                        >
-                                            Live Demo
-                                        </Button>
-                                    </a>
-                                ) : null}
+                    <div className="grid lg:grid-cols-2 gap-12 items-start">
+                        <div className="space-y-8 max-w-xl">
+                            <h3 className="text-lg md:text-2xl font-semibold text-violet-200 tracking-wide
+                                           border-b border-white/10 pb-2 w-fit">
 
-                                {project.github_link ? (
-                                    <a href={project.github_link} target="_blank" rel="noreferrer">
-                                        <Button
-                                            className="text-white text-lg bg-transparent border border-white/25 rounded-lg px-6 py-3 hover:bg-white/5"
-                                            size="lg"
-                                        >
-                                            GitHub Repo
-                                        </Button>
-                                    </a>
-                                ) : null}
-                            </div>
-                            <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
-                        </div>
-                        <div className="space-y-5 max-w-lg">
-                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
+                                Overview
+                            </h3>
+                            {renderParagraphOrPoints(project.overview)}
+                            <h3 className="text-lg md:text-2xl font-semibold text-violet-200 tracking-wide
+                                           border-b border-white/10 pb-2 w-fit">
+
                                 The Problem
-                            </p>
+                            </h3>
                             {renderParagraphOrPoints(project.problem)}
-                            <p className="text-xl font-semibold md:text-2xl text-violet-100">
+                            <h3 className="text-lg md:text-2xl font-semibold text-violet-200 tracking-wide
+                                           border-b border-white/10 pb-2 w-fit">
+
+                                The Solution
+                            </h3>
+                            {renderParagraphOrPoints(project.solution)}
+                            <h3 className="text-lg md:text-2xl font-semibold text-violet-200 tracking-wide
+                                           border-b border-white/10 pb-2 w-fit">
+                                Product Experience
+                            </h3>
+                            {renderParagraphOrPoints(project.experience)}
+
+                        </div>
+                        <div className="relative space-y-10 max-w-lg lg:pl-10">
+                            <div className="hidden lg:block absolute left-[-36px] top-0 h-full w-px
+                                            bg-gradient-to-b from-transparent via-white/30 to-transparent" />
+                            <h3 className="text-lg md:text-2xl font-semibold text-violet-200 tracking-wide
+                                           border-b border-white/10 pb-2 w-fit">
+
                                 Key Features
-                            </p>
+                            </h3>
                             <div className="text-base md:text-lg text-white/70 leading-relaxed">
                                 {project.key_features.map((feature, index) => (
                                     <div key={index} className="mb-4">
@@ -299,7 +284,37 @@ export default async function Page({params}) {
                                     </div>
                                 ))}
                             </div>
-                            <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
+                            <div className="space-y-4 pt-6">
+                                <h3 className="text-lg md:text-2xl font-semibold text-violet-200 tracking-wide
+                                               border-b border-white/10">
+                                    Links
+                                </h3>
+                                <div className="space-y-3">
+                                    {project.live_link ? (
+                                        <a href={project.live_link} target="_blank" rel="noreferrer">
+                                            <Button
+                                                className="w-full justify-start gap-3 text-white text-lg bg-blue-600 border border-white/25 rounded-lg shadow-sm hover:bg-blue-700"
+                                                size="lg"
+                                            >
+                                                Live Demo
+                                                <span className="ml-auto text-sm text-white/70 truncate">
+                                                    {project.live_link}
+                                                </span>
+                                            </Button>
+                                        </a>
+                                    ) : null}
+                                    {project.github_link ? (
+                                        <a href={project.github_link} target="_blank" rel="noreferrer">
+                                            <Button
+                                                className="w-full justify-start gap-3 text-white text-lg bg-transparent border border-white/25 rounded-lg hover:bg-white/5"
+                                                size="lg"
+                                            >
+                                                GitHub Repo
+                                            </Button>
+                                        </a>
+                                    ) : null}
+                                </div>
+                            </div>
                         </div>
                     </div>  
                 </div>
