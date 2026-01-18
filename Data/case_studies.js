@@ -62,7 +62,7 @@ export const caseStudies = [
     description:
       "An AI-driven career coaching platform that provides personalized guidance, resume optimization, and interview preparation to help users advance their careers.",
     stack: ["Next.js", "Tailwind CSS", "React", "Vercel", "PostgreSQL"],
-    image: "/projects/sensai.png",
+    image: "/mp/sensai-mockup.png",
     alt: "Sensai",
     live_link: "https://sensai-lyart.vercel.app/",
     github_link: "https://github.com/Manan0p/sensai",
