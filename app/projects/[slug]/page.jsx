@@ -3,6 +3,43 @@ import { caseStudies } from "@/Data/case_studies";
 import { Home } from "lucide-react";
 import { notFound } from "next/navigation";
 
+function renderParagraphOrPoints(value) {
+    if (!value) return null
+
+    const baseClass = "text-base md:text-lg text-white/70 leading-relaxed"
+
+    if (Array.isArray(value)) {
+        return (
+            <ul className={`${baseClass} list-disc pl-5 space-y-2`}>
+                {value.filter(Boolean).map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+        )
+    }
+
+    if (typeof value === "string") {
+        const lines = value
+            .split("\n")
+            .map((line) => line.trim())
+            .filter(Boolean)
+
+        if (lines.length > 1) {
+            return (
+                <ul className={`${baseClass} list-disc pl-5 space-y-2`}>
+                    {lines.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ul>
+            )
+        }
+
+        return <p className={baseClass}>{value}</p>
+    }
+
+    return null
+}
+
 export function generateStaticParams() {
     return caseStudies.map((p) => ({ slug: p.slug }))
 }
@@ -120,21 +157,15 @@ export default async function Page({params}) {
                             <p className="text-xl font-semibold md:text-2xl text-violet-100">
                                 The Problem
                             </p>
-                            <p className="text-base md:text-lg text-white/70 leading-relaxed">
-                                {project.problem}
-                            </p>
+                            {renderParagraphOrPoints(project.problem)}
                             <p className="text-xl font-semibold md:text-2xl text-violet-100">
                                 The Solution
                             </p>
-                            <p className="text-base md:text-lg text-white/70 leading-relaxed">
-                                {project.solution}
-                            </p>
+                            {renderParagraphOrPoints(project.solution)}
                             <p className="text-xl font-semibold md:text-2xl text-violet-100">
                                 Product Experience
                             </p>
-                            <p className="text-base md:text-lg text-white/70 leading-relaxed">
-                                {project.experience}
-                            </p>
+                            {renderParagraphOrPoints(project.experience)}
                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                         </div>
                         <div className="space-y-5 max-w-lg">
