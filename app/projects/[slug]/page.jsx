@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/Data/case_studies";
 import { Home } from "lucide-react";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 function renderParagraphOrPoints(value) {
@@ -173,9 +174,15 @@ export default async function Page({params}) {
                 <div className="relative z-10 container mx-auto px-4 md:px-6">
                     <div className="grid lg:grid-cols-2 gap-6 items-center">
                         <div className="space-y-5 max-w-lg">
-                            <div className="text-sm md:text-md lg:text-lg text-muted-foreground tracking-wide">
-                                <Home className="inline mb-1 mr-1 h-4 w-4"/>
-                                    Home / Projects / {project.title}
+                            <div className="text-sm md:text-md space-x-1 lg:text-lg text-muted-foreground tracking-wide">
+                                <Link href="/">
+                                    <Home className="inline mb-1 mr-1 h-4 w-4"/>
+                                    Home
+                                </Link>
+                                <Link href="/projects">
+                                    / Projects /
+                                </Link> 
+                                    {project.title}
                             </div>
                             <h2 className="text-5xl md:text-6xl font-semibold text-white">
                                 {project.title}
