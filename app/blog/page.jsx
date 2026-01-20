@@ -61,11 +61,11 @@ export default function page() {
                                              before:opacity-0 hover:before:opacity-100 before:transition-opacity">
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
                   <CardContent className="relative flex items-center justify-between gap-8 px-6 py-6">
-                    <div className="flex flex-col gap-3 max-w-[25%]">
+                    <div className="max-w-[400px] max-h-[400px] text-violet-400/90 group-hover:text-violet-400 transition-colors duration-300">
                         {data.icon}
                     </div>
                     <div className="flex flex-col gap-3 max-w-[75%]">
-                        <h3 className="text-3xl mb-1 font-semibold">{data.title}</h3>
+                        <h3 className="text-2xl mb-1 font-semibold">{data.title}</h3>
                         <p className="text-base text-white/90 leading-relaxed mb-3 line-clamp-2">
                           {data.path}
                         </p>
