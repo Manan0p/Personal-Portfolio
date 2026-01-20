@@ -37,22 +37,22 @@ export default function page() {
                     </div>  
                 </div>
             </section>
-            <section className="w-full py-16 md:py-24 lg:py-28 border-b border-white/10 bg-[radial-gradient(1200px_500px_at_50%_-100px,rgba(124,58,237,0.18),transparent_60%),radial-gradient(800px_400px_at_90%_20%,rgba(59,130,246,0.12),transparent_60%),linear-gradient(135deg,#0c0f1c,#070912)]">
+            <section className="w-full py-8 md:py-12 lg:py-16 border-b border-white/10 bg-[radial-gradient(1200px_500px_at_50%_-100px,rgba(124,58,237,0.18),transparent_60%),radial-gradient(800px_400px_at_90%_20%,rgba(59,130,246,0.12),transparent_60%),linear-gradient(135deg,#0c0f1c,#070912)]">
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/40 to-transparent" />
             <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
           <div className="container mx-auto px-4 md:px-6">
-            <div  className="text-md text-white/80 md:text-lg lg:text-xl mb-3 text-muted-foreground tracking-wide">
-                This space will feature deep dives into AI/ML systems, full-stack engineering, and lessons learned from building production ready applications.
+            <div  className="text-md text-white/80 md:text-lg lg:text-xl mb-5 text-muted-foreground tracking-wider">
+                This space will feature deep dives into AI/ML systems, full-stack engineering, and lessons <br /> learned from building production ready applications.
             </div>
-            <div  className="text-md text-white/80 md:text-lg lg:text-xl mb-16 text-muted-foreground tracking-wide">
+            <div  className="text-md text-white/80 md:text-lg lg:text-xl mb-16 text-muted-foreground tracking-wider">
                 I focus on practical insigths not theory  drawn directly from real projects and real challenges.
             </div>
             <h3 className="font-medium text-violet-100 tracking-normal text-left text-xl mb-8 md:text-2xl lg:text-3xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
                 What I'll Be Writing About
             </h3>
-            <div className="grid grid-cols-2 gap-6 max-w-auto mx-auto ">{blog.map((data,index)=>{
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-auto mx-auto ">{blog.map((data,index)=>{
               return(
                 <Card key={index} className="group relative-h-[230-px] after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
                                              backdrop-blur-xl border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)]
