@@ -60,16 +60,16 @@ export default function page() {
                                              before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
                                              before:opacity-0 hover:before:opacity-100 before:transition-opacity">
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
-                  <CardContent className="relative flex items-center justify-between gap-8 px-6 py-6">
-                    <div className="absolute h-full w-[42%] flex flex-col pointer-events-none">
-                        <div className="group-hover:scale-[1.03] absolute inset-0 rounded-full bg-violet-500/20 blur-3xl" />
-                        <div className="h-[92%] w-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.04]">
+                  <CardContent className="relative flex items-center gap-6 px-6 py-6">
+                    <div className="flex-shrink-0 relative">
+                        <div className="absolute inset-0 rounded-full bg-violet-500/25 blur-3xl" />
+                        <div className="relative transition-transform duration-300 group-hover:scale-[1.15]">
                             {data.icon}
                         </div>
                     </div>
-                    <div className="flex flex-col gap-3 max-w-[75%]">
-                        <h3 className="text-2xl mb-1 font-semibold">{data.title}</h3>
-                        <p className="text-base text-white/90 leading-relaxed mb-3 line-clamp-2">
+                    <div className="flex flex-col gap-3">
+                        <h3 className="text-2xl font-semibold">{data.title}</h3>
+                        <p className="text-base text-white/80 leading-relaxed mb-3 line-clamp-2">
                           {data.path}
                         </p>
                     </div>
