@@ -76,7 +76,7 @@ const page = () => {
               )
             })}</div>
           </div>          
-        </section>    
+        </section>
     </div>
   )
 }
