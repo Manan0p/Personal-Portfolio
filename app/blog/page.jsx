@@ -54,15 +54,16 @@ export default function page() {
             </h3>
             <div className="grid grid-cols-2 gap-6 max-w-auto mx-auto ">{blog.map((data,index)=>{
               return(
-                <Card key={index} className="after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
+                <Card key={index} className="group relative-h-[230-px] after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
                                              backdrop-blur-xl border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)]
                                              before:absolute before:inset-0 before:rounded-2xl
                                              before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
                                              before:opacity-0 hover:before:opacity-100 before:transition-opacity">
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
                   <CardContent className="relative flex items-center justify-between gap-8 px-6 py-6">
-                    <div className="max-w-[400px] max-h-[400px] text-violet-400/90 group-hover:text-violet-400 transition-colors duration-300">
-                        {data.icon}
+                    <div className="absolute h-full w-[42%] flex flex-col pointer-events-none">
+                        <div className="group-hover:scale-[1.03] absolute inset-0 rounded-full bg-violet-500/20 blur-3xl" />
+                        <img src={data.icon} alt={data.title} className="h-[92%] w-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.04]"/>
                     </div>
                     <div className="flex flex-col gap-3 max-w-[75%]">
                         <h3 className="text-2xl mb-1 font-semibold">{data.title}</h3>
