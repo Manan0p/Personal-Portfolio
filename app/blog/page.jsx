@@ -36,7 +36,7 @@ export default function page() {
                     </div>  
                 </div>
             </section>
-            <section className="w-full py-8 md:py-12 lg:py-16 border-b border-white/10 bg-[radial-gradient(1200px_500px_at_50%_-100px,rgba(124,58,237,0.18),transparent_60%),radial-gradient(800px_400px_at_90%_20%,rgba(59,130,246,0.12),transparent_60%),linear-gradient(135deg,#0c0f1c,#070912)]">
+            <section className="relative w-full py-8 md:py-12 lg:py-16 border-b border-white/10 bg-[radial-gradient(1200px_500px_at_50%_-100px,rgba(124,58,237,0.18),transparent_60%),radial-gradient(800px_400px_at_90%_20%,rgba(59,130,246,0.12),transparent_60%),linear-gradient(135deg,#0c0f1c,#070912)]">
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/40 to-transparent" />
             <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/40 to-transparent" />
@@ -78,6 +78,7 @@ export default function page() {
               )
             })}</div>
           </div>
+          <div className="pointer-events-none absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
         </section>
         <section className="w-full py-8 md:py-12 lg:py-16 border-b border-white/10 bg-[radial-gradient(1200px_500px_at_50%_-100px,rgba(124,58,237,0.18),transparent_60%),radial-gradient(800px_400px_at_90%_20%,rgba(59,130,246,0.12),transparent_60%),linear-gradient(135deg,#0c0f1c,#070912)]">
           <div className="container mx-auto px-4 md:px-6">
