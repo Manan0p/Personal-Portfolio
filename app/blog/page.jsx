@@ -63,7 +63,9 @@ export default function page() {
                   <CardContent className="relative flex items-center justify-between gap-8 px-6 py-6">
                     <div className="absolute h-full w-[42%] flex flex-col pointer-events-none">
                         <div className="group-hover:scale-[1.03] absolute inset-0 rounded-full bg-violet-500/20 blur-3xl" />
-                        <img src={data.icon} alt={data.title} className="h-[92%] w-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.04]"/>
+                        <div className="h-[92%] w-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.04]">
+                            {data.icon}
+                        </div>
                     </div>
                     <div className="flex flex-col gap-3 max-w-[75%]">
                         <h3 className="text-2xl mb-1 font-semibold">{data.title}</h3>
