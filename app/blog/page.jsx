@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { blog } from "@/Data/blog";
-import { caseStudies } from "@/Data/case_studies";
+import { drafts } from "@/Data/draft";
 import { Home } from "lucide-react";
 import Link from "next/link";
 
@@ -82,7 +81,7 @@ export default function page() {
         </section>
         <section className="w-full py-8 md:py-12 lg:py-16 border-b border-white/10 bg-[radial-gradient(1200px_500px_at_50%_-100px,rgba(124,58,237,0.18),transparent_60%),radial-gradient(800px_400px_at_90%_20%,rgba(59,130,246,0.12),transparent_60%),linear-gradient(135deg,#0c0f1c,#070912)]">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-auto mx-auto mb-10 ">{blog.map((data,index)=>{
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-auto mx-auto mb-10 ">{drafts.map((data,index)=>{
               return(
                 <Card key={index} className="group relative-h-[230-px] after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
                                              backdrop-blur-xl border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)]
