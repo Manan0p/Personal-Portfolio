@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { blog } from "@/Data/blog";
 import { caseStudies } from "@/Data/case_studies";
 import { Home } from "lucide-react";
 import Link from "next/link";
@@ -51,7 +52,7 @@ export default function page() {
             <h3 className="font-medium text-violet-100 tracking-normal text-left text-xl mb-8 md:text-2xl lg:text-3xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
                 What I'll Be Writing About
             </h3>
-            <div className="grid grid-cols-2 gap-6 max-w-auto mx-auto ">{caseStudies.map((project,index)=>{
+            <div className="grid grid-cols-2 gap-6 max-w-auto mx-auto ">{blog.map((data,index)=>{
               return(
                 <Card key={index} className="after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
                                              backdrop-blur-xl border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)]
@@ -61,24 +62,11 @@ export default function page() {
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
                   <CardContent className="relative flex items-center justify-between gap-8 px-6 py-6">
                       <div className="flex flex-col gap-3 max-w-[75%]">
-                        <h3 className="text-3xl mb-1 font-semibold">{project.title}</h3>
+                        <h3 className="text-3xl mb-1 font-semibold">{data.title}</h3>
                         <p className="text-base text-white/90 leading-relaxed mb-3 line-clamp-2">
-                          {project.description}
+                          {data.path}
                         </p>
-                        <div className="flex flex-wrap gap-2 pt-2">
-                          {project.stack?.map((tech, i) => (
-                            <span key={i} className="rounded-md bg-white/10 px-3 py-1 text-md text-white border border-white/10">
-                              {tech}
-                            </span>
-                          ))}
-                        </div>
                       </div>
-                      <Link href={`/projects/${project.slug}`} className="shrink-0">
-                        <Button className="text-white mt-4 bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] transition-all" size="lg">
-                          View Case Study
-                          <span className="text-lg">›</span>
-                        </Button>
-                      </Link>
                   </CardContent>
                 </Card>
               )
