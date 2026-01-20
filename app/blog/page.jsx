@@ -74,10 +74,49 @@ export default function page() {
                         </p>
                     </div>
                   </CardContent>
+                  <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                 </Card>
               )
             })}</div>
-          </div>          
+          </div>
+        </section>
+        <section className="w-full py-8 md:py-12 lg:py-16 border-b border-white/10 bg-[radial-gradient(1200px_500px_at_50%_-100px,rgba(124,58,237,0.18),transparent_60%),radial-gradient(800px_400px_at_90%_20%,rgba(59,130,246,0.12),transparent_60%),linear-gradient(135deg,#0c0f1c,#070912)]">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-auto mx-auto mb-10 ">{blog.map((data,index)=>{
+              return(
+                <Card key={index} className="group relative-h-[230-px] after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
+                                             backdrop-blur-xl border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)]
+                                             before:absolute before:inset-0 before:rounded-2xl
+                                             before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
+                                             before:opacity-0 hover:before:opacity-100 before:transition-opacity">
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
+                  <CardContent className="relative flex items-center gap-6 px-6 py-6">
+                    <div className="flex-shrink-0 relative">
+                        <div className="absolute inset-0 rounded-full bg-violet-500/25 blur-3xl" />
+                        <div className="relative transition-transform duration-300 group-hover:scale-[1.15]">
+                            {data.icon}
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-3">
+                        <h3 className="text-2xl font-semibold">{data.title}</h3>
+                        <p className="text-base text-white/80 leading-relaxed mb-3 line-clamp-2">
+                          {data.path}
+                        </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              )
+            })}
+            </div>
+            <div className="items-center text-center">
+                <div  className="text-md text-white/80 md:text-lg lg:text-xl mb-5 text-muted-foreground tracking-wider">
+                First Article Coming Soon 🚀
+            </div>
+            <div  className="text-md text-white/80 md:text-lg lg:text-xl text-muted-foreground tracking-wider">
+                Currently drafting in-depth posts based on my experiences building AI-powered applications.
+            </div>
+            </div>
+          </div>         
         </section>
         </div>
     )
