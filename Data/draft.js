@@ -1,4 +1,4 @@
-import { LucideShoppingBag, ShieldAlert } from "lucide-react";
+import { Backpack, LucideShoppingBag, ShieldAlert } from "lucide-react";
 
 export const drafts = [
     {
@@ -7,7 +7,7 @@ export const drafts = [
         path: "Draft - Coming Soon",
     },
     {
-        icon: <LucideShoppingBag className="w-20 h-20 md:w-24 md:h-24 text-violet-400" />,
+        icon: <Backpack className="w-20 h-20 md:w-24 md:h-24 text-violet-400" />,
         title: "Designing A Smart Expense Splitting System",
         path: "Draft - Coming Soon",
     },
