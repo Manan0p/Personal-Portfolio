@@ -18,3 +18,21 @@ export const skills = [
         stack: ["React", "Next.js", "Python", "Javascript", "Flask", "Tailwind CSS", "AI/ML", "Node.js", "FastAPI", "CI/CD", "SQLite", "NLP"]
     }
 ]
+
+export const others = [
+    {
+        icon: "",
+        title: "",
+        info: ""
+    },
+    {
+        icon: "",
+        title: "",
+        info: ""
+    },
+    {
+        icon: "",
+        title: "",
+        info: ""
+    }
+]
