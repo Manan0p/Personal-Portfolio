@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Home } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { renderParagraphOrPoints } from "../projects/[slug]/page";
 
 export default function page() {
     return (
@@ -52,6 +53,29 @@ export default function page() {
             </div>
             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/70 to-transparent" />
             <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-violet-400/40 to-transparent blur-sm" />
+            </section>
+            <section className="relative w-full overflow-hidden pt-6 pb-10 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+                <div className="pointer-events-none absolute inset-0 
+                                bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
+                <div className="relative z-10 container mx-auto px-4 md:px-6">
+                    <div className="grid lg:grid-cols-2 gap-12 items-start">
+                        <div className="space-y-8 max-w-xl">
+                            <h2 className="text-lg md:text-3xl font-semibold text-violet-200 tracking-wide
+                                            border-b border-white/10">
+                                What I Do
+                            </h2>
+                        </div>
+                        <div className="relative space-y-10 max-w-lg lg:pl-10">
+                            <div className="hidden lg:block absolute left-[-32px] top-0 h-full w-px
+                                            bg-gradient-to-b from-transparent via-violet-400/25 to-transparent" />
+                            <div className=" hidden lg:block absolute left-[-33px] top-0 h-full w-[3px]
+                                             bg-gradient-to-b from-transparent via-violet-500/10 to-transparent 
+                                             blur-md opacity-70" />
+                            <div className="space-y-4 pt-6">
+                            </div>
+                        </div>
+                    </div>  
+                </div>
             </section>
         </div>
     )
