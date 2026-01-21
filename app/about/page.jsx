@@ -81,6 +81,12 @@ export default function page() {
                                                         {data.icon}
                                                     </div>
                                                 </div>
+                                                <div className="flex flex-col gap-3">
+                                                    <h3 className="text-2xl font-semibold">{data.title}</h3>
+                                                    <p className="text-base text-white/80 leading-relaxed mb-3 line-clamp-2">
+                                                    {data.description}
+                                                    </p>
+                                                </div>
                                             </CardContent>
                                         </Card>
                                     )
