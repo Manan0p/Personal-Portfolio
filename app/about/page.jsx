@@ -27,7 +27,7 @@ export default function page() {
                         </Link> 
                         About
                     </div>
-                    <h2 className="font-medium text-violet-100 tracking-normal text-left text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
+                    <h2 className="font-medium text-white tracking-normal text-left text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
                     About
                     </h2>
                     <div className="text-lg md:text-xl lg:text-2xl font-medium tracking-wider">
@@ -36,6 +36,7 @@ export default function page() {
                     <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wider">
                     Driven by a curosity for AI and modern <br /> web technologies. I'm an AI/ML engineer and <br /> full-stack dveloper. I specialize in building <br /> intelligent systems that tackle genuine problems <br /> with real impact.
                     </div>
+                    <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                 </div>
 
                 <div className="flex justify-center lg:justify-end items-center">
