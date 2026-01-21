@@ -36,9 +36,9 @@ export default function page() {
 
                 <div className="flex justify-center lg:justify-end items-center">
                     <Image
-                    src="/final.png"
-                    alt="Futuristic AI servers illustration"
-                    width={1200}
+                    src="/about.png"
+                    alt="Hero Image"
+                    width={800}
                     height={800}
                     priority
                     className="w-full max-w-3xl drop-shadow-[0_30px_80px_rgba(0,0,0,0.7)] animate-float translate-y-[-10px]"
