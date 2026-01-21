@@ -137,15 +137,15 @@ export default function page() {
                         <div className="flex items-center justify-center gap-4 mb-2">
                             <div className="h-px w-32 bg-white/50" />
                             <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text">
-                                Featured Projects
+                                Outside of work
                             </h2>
                             <div className="h-px w-32 bg-white/50" />
                         </div>
-                        <p className="text-md md:text-lg text-muted-foreground tracking-wide">
-                            Innovative Solutions I&apos;ve Built
+                        <p className="text-lg md:text-xl text-muted-foreground tracking-wide">
+                            Feel free to reach out if you'd like to collaborate, chat about tech, or just get <br /> to know each other.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 ">{projects.map((project,index)=>{
+                    {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 ">{projects.map((project,index)=>{
                         return(
                             <Link key={index} href={project.link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                                 <Card className="group relative h-[230px] overflow-hidden rounded-2xl bg-white/7 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
@@ -165,7 +165,7 @@ export default function page() {
                                 </Card>
                             </Link>
                         )
-                        })}</div>
+                        })}</div> */}
                 </div>
             </section>
         </div>
