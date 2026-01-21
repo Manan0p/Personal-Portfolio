@@ -13,10 +13,10 @@ export default function page() {
                 <div className="absolute right-0 bottom-0 h-full w-[55%] bg-gradient-to-bl from-pink-500/35 via-violet-500/25 to-transparent blur-2xl"/>
                 <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-violet-400/80 to-transparent"/>
             </div>
-            <div className="container mx-auto px-4 md:px-6">
+            <div className="relative z-10 container mx-auto px-4 md:px-6">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
-                <div className="space-y-5 pt-4">
-                    <div className="text-sm md:text-md lg:text-lg text-muted-foreground tracking-wide">
+                <div className="space-y-5 pt-10 max-w-lg">
+                    <div className="text-sm md:text-md lg:text-lg space-x-1 text-muted-foreground tracking-wide">
                         <Link href="/">
                             <Home className="inline mb-1 mr-1 h-4 w-4"/>
                             Home /
@@ -35,13 +35,12 @@ export default function page() {
                 </div>
 
                 <div className="flex justify-center lg:justify-end items-center">
-                    <Image
+                    <img
                     src="/about.png"
                     alt="Hero Image"
-                    width={800}
-                    height={800}
-                    priority
-                    className="w-full max-w-3xl drop-shadow-[0_30px_80px_rgba(0,0,0,0.7)] animate-float translate-y-[-10px]"
+                    className="w-[520px] md:w-[640px] lg:w-[720px]
+                                        drop-shadow-[0_40px_80px_rgba(168,85,247,0.35)]
+                                        select-none pointer-events-none"
                     />
                 </div>
                 </div>
