@@ -22,25 +22,6 @@ export default function page() {
                     <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide">
                     Solving real world problems with cutting edge AI and <br /> modern web technologies.
                     </div>
-                    
-                    <div className="flex flex-wrap items-center gap-4 pt-2">
-                    <Link href="/projects">
-                        <Button
-                        className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
-                        size="lg"
-                        >
-                        View Projects
-                        </Button>
-                    </Link>
-                    <a href="/Manan_Lall_CV.pdf" download="Manan_Lall_CV.pdf">
-                        <Button
-                        className="text-white text-lg bg-transparent border border-white/25 rounded-lg px-6 py-3 hover:bg-white/5"
-                        size="lg"
-                        >
-                        Download CV
-                        </Button>
-                    </a>
-                    </div>
                 </div>
 
                 <div className="flex justify-center lg:justify-end items-center">
