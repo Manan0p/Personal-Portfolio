@@ -132,10 +132,40 @@ export default function page() {
             <section className="relative w-full overflow-hidden pt-6 pb-10 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
                 <div className="pointer-events-none absolute inset-0 
                                 bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
-                <div className="relative z-10 container mx-auto px-4 md:px-6">
-                    <div className="grid lg:grid-cols-3 gap-12 items-start">
-                        
-                    </div>  
+                <div className="container mx-auto px-4 md:px-6">
+                    <div className="text-center mb-10">
+                        <div className="flex items-center justify-center gap-4 mb-2">
+                            <div className="h-px w-32 bg-white/50" />
+                            <h2 className="text-4xl font-bold tracking-wide inline-block bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text">
+                                Featured Projects
+                            </h2>
+                            <div className="h-px w-32 bg-white/50" />
+                        </div>
+                        <p className="text-md md:text-lg text-muted-foreground tracking-wide">
+                            Innovative Solutions I&apos;ve Built
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 ">{projects.map((project,index)=>{
+                        return(
+                            <Link key={index} href={project.link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                                <Card className="group relative h-[230px] overflow-hidden rounded-2xl bg-white/7 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
+                                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
+                                    <CardContent className={"relative flex h-full overflow-hidden px-5"}>
+                                        <div className="relative z-10 flex flex-col max-w-[60%]">
+                                            <h3 className="text-xl font-bold leading-tight mb-1">{project.title}</h3>
+                                            <p className="text-lg text-muted-foreground">{project.info}</p>
+                                            <br />
+                                            <div className="text-muted-foreground text-sm leading-relaxed">{project.description}</div>
+                                        </div>
+                                        <div className="absolute right-4 top-0 h-full w-[42%] flex items-center justify-center pointer-events-none">
+                                            <div className="group-hover:scale-[1.03] absolute inset-0 rounded-full bg-violet-500/20 blur-3xl" />
+                                            <img src={project.icon} alt={project.title} className="h-[92%] w-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.04]"/>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </Link>
+                        )
+                        })}</div>
                 </div>
             </section>
         </div>
