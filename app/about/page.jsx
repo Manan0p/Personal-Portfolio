@@ -13,7 +13,7 @@ export default function page() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                 <div className="space-y-5 pt-4">
-                    <h2 className="gradient-title font-bold tracking-tighter text-left text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
+                    <h2 className="font-medium text-violet-100 tracking-normal text-left text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
                     About
                     </h2>
                     <div className="text-lg md:text-xl lg:text-2xl font-medium tracking-wider">
