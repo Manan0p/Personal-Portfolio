@@ -22,3 +22,9 @@ export const blog = [
         path: "Splitr, Sensai, JobGuard AI and Dealdrop - what worked and what didn't",
     },
 ];
+
+export const skills = [
+    {
+        stack: ["React", "Next.js", "AI/ML", "Python", "Flask", "Tailwind CSS", "Node.js", "FastAPI", "Javascript", "CI/CD", "SQLite", "NLP"]
+    }
+]

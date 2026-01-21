@@ -100,6 +100,11 @@ export default function page() {
                                              bg-gradient-to-b from-transparent via-violet-500/10 to-transparent 
                                              blur-md opacity-70" />
                             <div className="space-y-4 pt-6">
+                                <h2 className="text-lg md:text-3xl font-semibold text-violet-200 tracking-wide
+                                            border-b border-white/10">
+                                    Technical Skills
+                                </h2>
+                                
                             </div>
                         </div>
                     </div>  
