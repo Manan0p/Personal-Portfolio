@@ -141,13 +141,15 @@ export default function page() {
                             </h2>
                             <div className="h-px w-32 bg-white/50" />
                         </div>
-                        <p className="text-lg md:text-xl text-muted-foreground tracking-wider">
-                            Feel free to reach out if you'd like to collaborate, chat about tech, or just get <br /> to know each other.
+                        <p className="text-lg md:text-xl text-muted-foreground tracking-wide pt-4">
+                            Feel free to reach out if you'd like to collaborate, chat about tech, or just get
+                        </p>
+                        <p className="text-lg md:text-xl text-muted-foreground tracking-wide pt-3">
+                            to know each other.
                         </p>
                     </div>
                     {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 ">{projects.map((project,index)=>{
                         return(
-                            <Link key={index} href={project.link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                                 <Card className="group relative h-[230px] overflow-hidden rounded-2xl bg-white/7 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
                                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
                                     <CardContent className={"relative flex h-full overflow-hidden px-5"}>
@@ -163,7 +165,6 @@ export default function page() {
                                         </div>
                                     </CardContent>
                                 </Card>
-                            </Link>
                         )
                         })}</div> */}
                 </div>
