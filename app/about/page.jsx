@@ -105,9 +105,12 @@ export default function page() {
                                             border-b border-white/10">
                                     Technical Skills
                                 </h2>
-                                <div className="flex flex-wrap gap-2 pt-2">
+                                <div className="flex flex-wrap gap-4 pt-2">
                                     {skills[0].stack?.map((tech, i) => (
-                                        <span key={i} className="rounded-md backdrop backdrop-blur-md supports-backdrop-filter:bg-background/10 px-4 py-2 text-lg text-white border-b border-white/30">
+                                        <span key={i} className="group relative-h-[230-px] rounded-md px-4 py-2 text-lg after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden bg-gradient-to-br
+                                                                from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90 backdrop-blur-xl border border-white/10 transition-all duration-300 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)] before:absolute before:inset-0 before:rounded-md
+                                                                before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
+                                                                before:opacity-0 hover:before:opacity-100 before:transition-opacity">
                                             {tech}
                                         </span>
                                     ))}
