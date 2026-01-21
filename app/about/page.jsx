@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Home } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,6 +14,13 @@ export default function page() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                 <div className="space-y-5 pt-4">
+                    <div className="text-sm md:text-md lg:text-lg text-muted-foreground tracking-wide">
+                        <Link href="/">
+                            <Home className="inline mb-1 mr-1 h-4 w-4"/>
+                            Home /
+                        </Link> 
+                        About
+                    </div>
                     <h2 className="font-medium text-violet-100 tracking-normal text-left text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
                     About
                     </h2>
