@@ -115,7 +115,7 @@ export default function page() {
                                         </span>
                                     ))}
                                     <div className="text-md pt-5 md:text-lg lg:text-xl text-muted-foreground tracking-wider">
-                                        i work with variety of tools to turn ideas into real applications.
+                                        I work with variety of tools to turn ideas into real applications.
                                     </div>
                                 </div>
                                 <a href="/Manan_Lall_CV.pdf" download="Manan_Lall_CV.pdf">
@@ -126,6 +126,15 @@ export default function page() {
                                 </a>
                             </div>
                         </div>
+                    </div>  
+                </div>
+            </section>
+            <section className="relative w-full overflow-hidden pt-6 pb-10 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+                <div className="pointer-events-none absolute inset-0 
+                                bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
+                <div className="relative z-10 container mx-auto px-4 md:px-6">
+                    <div className="grid lg:grid-cols-3 gap-12 items-start">
+                        
                     </div>  
                 </div>
             </section>
