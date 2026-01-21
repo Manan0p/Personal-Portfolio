@@ -114,6 +114,12 @@ export default function page() {
                                         i work with variety of tools to turn ideas into real applications.
                                     </div>
                                 </div>
+                                <a href="/Manan_Lall_CV.pdf" download="Manan_Lall_CV.pdf">
+                                    <Button className="w-full text-white mt-4 bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 px-10 py-6 text-xl font-medium shadow-lg hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] transition-all" size="lg">
+                                        View Resume
+                                        <span className="text-lg">›</span>
+                                    </Button>
+                                </a>
                             </div>
                         </div>
                     </div>  
