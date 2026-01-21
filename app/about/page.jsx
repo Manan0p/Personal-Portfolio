@@ -39,7 +39,7 @@ export default function page() {
                     <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                 </div>
 
-                <div className="flex justify-center lg:justify-end items-center">
+                <div className="relative hidden lg:flex items-center justify-end pt-6">
                     <img
                     src="/about.png"
                     alt="Hero Image"
