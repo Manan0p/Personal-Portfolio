@@ -20,7 +20,7 @@ export default function page() {
                     AI/ML Engineer | Full-Stack Developer
                     </div>
                     <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide">
-                    Solving real world problems with cutting edge AI and <br /> modern web technologies.
+                    Driven by a curosity for AI and modern <br /> web technologies. I'm an AI/ML engineer and <br /> full-stack dveloper. I specialize in building <br /> intelligent systems that tackle genuine problems <br /> with real impact.
                     </div>
                 </div>
 
