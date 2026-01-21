@@ -12,3 +12,9 @@ export const card = [
         description: "Build responsive, scalable and secure web applications.",
     }
 ]
+
+export const skills = [
+    {
+        stack: ["React", "Next.js", "AI/ML", "Python", "Flask", "Tailwind CSS", "Node.js", "FastAPI", "Javascript", "CI/CD", "SQLite", "NLP"]
+    }
+]
