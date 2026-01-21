@@ -14,12 +14,12 @@ export default function page() {
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                 <div className="space-y-5 pt-4">
                     <h2 className="gradient-title font-bold tracking-tighter text-left text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
-                    Building Intelligent <br /> & Scalable Systems
+                    About
                     </h2>
-                    <div className="text-lg md:text-xl lg:text-2xl font-medium tracking-wide">
-                    AI/ML Engineer | Full-Stack Developer
+                    <div className="text-lg md:text-xl lg:text-2xl font-medium tracking-wider">
+                    Hey! I'm Manan👋🏻
                     </div>
-                    <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide">
+                    <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wider">
                     Driven by a curosity for AI and modern <br /> web technologies. I'm an AI/ML engineer and <br /> full-stack dveloper. I specialize in building <br /> intelligent systems that tackle genuine problems <br /> with real impact.
                     </div>
                 </div>
