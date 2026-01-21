@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { renderParagraphOrPoints } from "../projects/[slug]/page";
 import { Card, CardContent } from "@/components/ui/card";
-import { card, skills } from "@/Data/about";
+import { card, others, skills } from "@/Data/about";
 
 export default function page() {
     return (
@@ -148,25 +148,21 @@ export default function page() {
                             to know each other.
                         </p>
                     </div>
-                    {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 ">{projects.map((project,index)=>{
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 ">{others.map((other,index)=>{
                         return(
-                                <Card className="group relative h-[230px] overflow-hidden rounded-2xl bg-white/7 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
+                                <Card key={index} className="group relative h-[230px] overflow-hidden rounded-2xl bg-white/7 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
                                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
                                     <CardContent className={"relative flex h-full overflow-hidden px-5"}>
-                                        <div className="relative z-10 flex flex-col max-w-[60%]">
-                                            <h3 className="text-xl font-bold leading-tight mb-1">{project.title}</h3>
-                                            <p className="text-lg text-muted-foreground">{project.info}</p>
-                                            <br />
-                                            <div className="text-muted-foreground text-sm leading-relaxed">{project.description}</div>
-                                        </div>
-                                        <div className="absolute right-4 top-0 h-full w-[42%] flex items-center justify-center pointer-events-none">
+                                        <div className="relative z-10 flex flex-col max-w-[80%]">
                                             <div className="group-hover:scale-[1.03] absolute inset-0 rounded-full bg-violet-500/20 blur-3xl" />
-                                            <img src={project.icon} alt={project.title} className="h-[92%] w-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.04]"/>
+                                            <img src={other.icon} alt={other.title} className="h-[92%] w-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.04]"/>
+                                            <h3 className="text-xl font-bold leading-tight mb-1">{other.title}</h3>
+                                            <div className="text-muted-foreground text-md leading-relaxed">{other.info}</div>
                                         </div>
                                     </CardContent>
                                 </Card>
                         )
-                        })}</div> */}
+                        })}</div>
                 </div>
             </section>
         </div>
