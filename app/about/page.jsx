@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { renderParagraphOrPoints } from "../projects/[slug]/page";
 import { Card, CardContent } from "@/components/ui/card";
-import { card } from "@/Data/about";
+import { card, skills } from "@/Data/about";
 
 export default function page() {
     return (
@@ -104,7 +104,13 @@ export default function page() {
                                             border-b border-white/10">
                                     Technical Skills
                                 </h2>
-                                
+                                <div className="flex flex-wrap gap-2 pt-2">
+                                    {skills[0].stack?.map((tech, i) => (
+                                        <span key={i} className="rounded-md bg-white/10 px-4 py-1 text-lg text-white border border-white/10">
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>  

@@ -15,6 +15,6 @@ export const card = [
 
 export const skills = [
     {
-        stack: ["React", "Next.js", "AI/ML", "Python", "Flask", "Tailwind CSS", "Node.js", "FastAPI", "Javascript", "CI/CD", "SQLite", "NLP"]
+        stack: ["React", "Next.js", "Python", "Flask", "Tailwind CSS", "AI/ML", "Node.js", "FastAPI", "Javascript", "CI/CD", "SQLite", "NLP"]
     }
 ]
