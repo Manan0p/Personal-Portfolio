@@ -22,17 +22,17 @@ export const skills = [
 export const others = [
     {
         icon: "",
-        title: "",
-        info: ""
+        title: "Innovation",
+        info: "I love exploring new ideas, side projects and emerging tech."
     },
     {
         icon: "",
-        title: "",
-        info: ""
+        title: "Gaming",
+        info: "Big sci-fi RPG (think Mass Effect) Gaming as a mental recharge."
     },
     {
         icon: "",
-        title: "",
-        info: ""
+        title: "Outdoors",
+        info: "I hike, travel and enjoy getting out into nature whenever possible."
     }
 ]
