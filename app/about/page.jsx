@@ -16,10 +16,10 @@ export default function page() {
 
             <div className="pointer-events-none absolute inset-0 
                                 bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
-                                
+
             <div className="relative z-10 container mx-auto px-4 md:px-6">
-                <div className="grid lg:grid-cols-2 gap-8 items-start">
-                <div className="space-y-5 pt-10 max-w-lg">
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div className="space-y-5 max-w-lg">
                     <div className="text-sm md:text-md lg:text-lg space-x-1 text-muted-foreground tracking-wide">
                         <Link href="/">
                             <Home className="inline mb-1 mr-1 h-4 w-4"/>
