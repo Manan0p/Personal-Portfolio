@@ -88,6 +88,7 @@ export default function page() {
                                                     </p>
                                                 </div>
                                             </CardContent>
+                                            <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                                         </Card>
                                     )
                                 })}
