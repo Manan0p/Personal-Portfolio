@@ -74,7 +74,7 @@ export default function page() {
                                                     before:absolute before:inset-0 before:rounded-2xl
                                                     before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
                                                     before:opacity-0 hover:before:opacity-100 before:transition-opacity">
-                                            <CardContent>
+                                            <CardContent className="relative flex items-center gap-6 px-6 py-6">
                                                 <div className="flex-shrink-0 relative">
                                                     <div className="absolute inset-0 rounded-full bg-violet-500/25 blur-3xl" />
                                                     <div className="relative transition-transform duration-300 group-hover:scale-[1.15]">
