@@ -3,6 +3,7 @@ import { Home } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { renderParagraphOrPoints } from "../projects/[slug]/page";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function page() {
     return (
@@ -64,6 +65,11 @@ export default function page() {
                                             border-b border-white/10">
                                 What I Do
                             </h2>
+                            <Card>
+                                <CardContent>
+                                    
+                                </CardContent>
+                            </Card>
                         </div>
                         <div className="relative space-y-10 max-w-lg lg:pl-10">
                             <div className="hidden lg:block absolute left-[-32px] top-0 h-full w-px
