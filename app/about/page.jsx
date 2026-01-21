@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { renderParagraphOrPoints } from "../projects/[slug]/page";
 import { Card, CardContent } from "@/components/ui/card";
+import { card } from "@/Data/about";
 
 export default function page() {
     return (
@@ -65,11 +66,26 @@ export default function page() {
                                             border-b border-white/10">
                                 What I Do
                             </h2>
-                            <Card>
-                                <CardContent>
-                                    
-                                </CardContent>
-                            </Card>
+                            <div className="grid grid-cols-1 gap-6 max-w-auto mx-auto ">
+                                {card.map((data,index)=>{
+                                    return(
+                                        <Card key={index} className="group relative-h-[230-px] after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
+                                                    backdrop-blur-xl border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)]
+                                                    before:absolute before:inset-0 before:rounded-2xl
+                                                    before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
+                                                    before:opacity-0 hover:before:opacity-100 before:transition-opacity">
+                                            <CardContent>
+                                                <div className="flex-shrink-0 relative">
+                                                    <div className="absolute inset-0 rounded-full bg-violet-500/25 blur-3xl" />
+                                                    <div className="relative transition-transform duration-300 group-hover:scale-[1.15]">
+                                                        {data.icon}
+                                                    </div>
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    )
+                                })}
+                            </div>
                         </div>
                         <div className="relative space-y-10 max-w-lg lg:pl-10">
                             <div className="hidden lg:block absolute left-[-32px] top-0 h-full w-px
