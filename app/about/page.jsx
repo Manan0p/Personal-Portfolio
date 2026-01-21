@@ -13,6 +13,10 @@ export default function page() {
                 <div className="absolute right-0 bottom-0 h-full w-[55%] bg-gradient-to-bl from-pink-500/35 via-violet-500/25 to-transparent blur-2xl"/>
                 <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-violet-400/80 to-transparent"/>
             </div>
+
+            <div className="pointer-events-none absolute inset-0 
+                                bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
+                                
             <div className="relative z-10 container mx-auto px-4 md:px-6">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                 <div className="space-y-5 pt-10 max-w-lg">
