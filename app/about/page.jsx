@@ -141,7 +141,7 @@ export default function page() {
                             </h2>
                             <div className="h-px w-32 bg-white/50" />
                         </div>
-                        <p className="text-lg md:text-xl text-muted-foreground tracking-wide">
+                        <p className="text-lg md:text-xl text-muted-foreground tracking-wider">
                             Feel free to reach out if you'd like to collaborate, chat about tech, or just get <br /> to know each other.
                         </p>
                     </div>
