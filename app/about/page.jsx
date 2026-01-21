@@ -106,10 +106,13 @@ export default function page() {
                                 </h2>
                                 <div className="flex flex-wrap gap-2 pt-2">
                                     {skills[0].stack?.map((tech, i) => (
-                                        <span key={i} className="rounded-md bg-white/10 px-4 py-1 text-lg text-white border border-white/10">
+                                        <span key={i} className="rounded-md backdrop backdrop-blur-md supports-backdrop-filter:bg-background/10 px-4 py-2 text-lg text-white border-b border-white/30">
                                             {tech}
                                         </span>
                                     ))}
+                                    <div className="text-md pt-5 md:text-lg lg:text-xl text-muted-foreground tracking-wider">
+                                        i work with variety of tools to turn ideas into real applications.
+                                    </div>
                                 </div>
                             </div>
                         </div>
