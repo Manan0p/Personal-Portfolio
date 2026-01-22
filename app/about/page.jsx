@@ -154,9 +154,8 @@ export default function page() {
                                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
                                     <CardContent className={"relative flex h-full overflow-hidden px-5"}>
                                         <div className="relative z-10 flex flex-col max-w-[80%]">
-                                            <div className="group-hover:scale-[1.03] absolute inset-0 rounded-full bg-violet-500/20 blur-3xl" />
-                                            <img src={other.icon} alt={other.title} className="h-[92%] w-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.04]"/>
-                                            <h3 className="text-xl font-bold leading-tight mb-1">{other.title}</h3>
+                                            <img src={other.icon} alt={other.title} className="h-[55%] w-[65%] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-[1.04]"/>
+                                            <h3 className="text-xl font-bold leading-tight mb-1 pt-2">{other.title}</h3>
                                             <div className="text-muted-foreground text-md leading-relaxed">{other.info}</div>
                                         </div>
                                     </CardContent>
