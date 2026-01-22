@@ -28,7 +28,7 @@ export const others = [
     {
         icon: "",
         title: "Gaming",
-        info: "Big sci-fi RPG (think Mass Effect) Gaming as a mental recharge."
+        info: "Big sci-fi RPG fan (think Mass Effect) Gaming as a mental recharge."
     },
     {
         icon: "",
