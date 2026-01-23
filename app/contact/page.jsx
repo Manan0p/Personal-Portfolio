@@ -1,3 +1,4 @@
+import { badges } from "@/Data/contact";
 import { Home } from "lucide-react";
 import Link from "next/link";
 
@@ -31,10 +32,20 @@ export default function page() {
                             <div className="max-w-lg text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide">
                             Open to collaborations, internships, freelance work,and interesting conversations around AI or product engineering.
                             </div>
+                            <div className="flex flex-wrap gap-4 pt-2">
+                                {badges[0].stack?.map((tech, i) => (
+                                    <span key={i} className="group relative-h-[230-px] rounded-md px-4 py-2 text-lg after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden bg-black/10
+                                                             from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90 backdrop-blur-md border border-white/10 transition-all duration-300 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)] before:absolute before:inset-0 before:rounded-md
+                                                             before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
+                                                             before:opacity-0 hover:before:opacity-100 before:transition-opacity">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                         </div>
 
-                        <div className="relative hidden lg:flex items-center justify-end pt-6">
+                        {/* <div className="relative hidden lg:flex items-center justify-end pt-6">
                             <img
                             src="/about.png"
                             alt="Hero Image"
@@ -42,7 +53,7 @@ export default function page() {
                                                 drop-shadow-[0_40px_80px_rgba(168,85,247,0.35)]
                                                 select-none pointer-events-none"
                             />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/70 to-transparent" />
