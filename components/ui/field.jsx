@@ -81,17 +81,21 @@ const fieldVariants = cva("group/field flex w-full gap-3 data-[invalid=true]:tex
 function Field({
   className,
   orientation = "vertical",
+  children,
+  style,
   ...props
 }) {
-  const { style, ...safeProps } = props;
   return (
     <div
-      role="group" suppressHydrationWarning suppressContentEditableWarning
+      role="group"
       data-slot="field"
       data-orientation={orientation}
       className={cn(fieldVariants({ orientation }), className)}
-      {...safeProps}
-    />
+      style={style}
+      {...props}
+    >
+      {children}
+    </div>
   );
 }
 

@@ -155,12 +155,8 @@ export default function page() {
                             <div className="h-px w-32 bg-white/50" />
                         </div>
                         <div className="relative mx-auto my-12 w-full max-w-lg
-  rounded-2xl
-  border border-white/10
-  bg-gradient-to-br from-white/5 via-white/[0.02] to-transparent
-  backdrop-blur-xl
-  shadow-[0_0_40px_rgba(99,102,241,0.15)]
-  p-8" id="send-message">
+                                        rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 via-white/[0.02] to-transparent
+                                        backdrop-blur-xl shadow-[0_0_40px_rgba(99,102,241,0.15)] p-8" id="send-message">
                             <form>
                                 <FieldGroup>
                                 <FieldSet>
@@ -243,6 +239,65 @@ export default function page() {
                                 </FieldGroup> 
                             </form>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section className="relative w-full overflow-hidden pt-10 pb-12 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+                
+                {/* Background glow */}
+                <div className="pointer-events-none absolute inset-0 z-0">
+                    <div className="absolute right-[-10%] bottom-[-35%] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle_at_30%_30%,
+                    rgba(236,72,153,0.85),rgba(168,85,247,0.6),rgba(99,102,241,0.35),transparent_65%)] blur-[140px]" />
+                    <div className="absolute right-0 bottom-0 h-full w-[55%] bg-gradient-to-bl from-pink-500/35 via-violet-500/25 to-transparent blur-2xl" />
+                </div>
+
+                {/* Content */}
+                <div className="relative z-10 mx-auto max-w-3xl text-center px-6">
+                    
+                    {/* Quote */}
+                    <p className="text-sm md:text-base text-white/80 leading-relaxed">
+                    I enjoy working on ideas that have real impact.
+                    <br />
+                    <span className="text-white/90">
+                        If that sounds like you — let’s talk.
+                    </span>
+                    </p>
+
+                    {/* Divider */}
+                    <div className="mx-auto my-6 h-px w-32 bg-gradient-to-r from-transparent via-violet-400/70 to-transparent" />
+
+                    {/* Social Icons */}
+                    <div className="flex items-center justify-center gap-6">
+                    <a
+                        href="mailto:workformanan@gmail.com"
+                        className="text-white/60 hover:text-white transition"
+                    >
+                        {/* Mail Icon */}
+                        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M4 4h16v16H4z" fill="none"/>
+                        <path d="M20 4H4v16h16V4zm-2 2-6 4-6-4h12zm0 12H4V8l8 5 8-5v10z"/>
+                        </svg>
+                    </a>
+
+                    <a
+                        href="https://github.com/MananOp"
+                        className="text-white/60 hover:text-white transition"
+                    >
+                        {/* GitHub Icon */}
+                        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 1.8 2.6 2.3.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.6 0-1.2.4-2.1 1.1-2.9-.1-.3-.5-1.5.1-3 0 0 .9-.3 3 1.1.9-.2 1.8-.4 2.7-.4s1.8.1 2.7.4c2.1-1.4 3-1.1 3-1.1.6 1.5.2 2.7.1 3 .7.8 1.1 1.7 1.1 2.9 0 4.4-2.6 5.3-5.1 5.6.4.3.8 1 .8 2v3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/>
+                        </svg>
+                    </a>
+
+                    <a
+                        href="https://linkedin.com/in/mananlall"
+                        className="text-white/60 hover:text-white transition"
+                    >
+                        {/* LinkedIn Icon */}
+                        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1 5 2.1 5 3.5zM0 8h5v16H0V8zm7 0h4.8v2.2h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.8V24h-5V15.3c0-2.1 0-4.9-3-4.9s-3.5 2.3-3.5 4.7V24H7V8z"/>
+                        </svg>
+                    </a>
                     </div>
                 </div>
             </section>
