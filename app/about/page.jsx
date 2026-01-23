@@ -164,7 +164,7 @@ export default function page() {
                         })}</div>
                 </div>
             </section>
-            <section className="relative w-full py-16 md:py-24 border-b border-white/10 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]">
+            <section className="relative w-full overflow-hidden pt-6 pb-10 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
                       <div className="container mx-auto px-4 md:px-6">
                         <div className="text-center">
                           <div className="flex items-center justify-center gap-6 mb-4 max-w-sm mx-auto">
