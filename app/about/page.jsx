@@ -5,6 +5,7 @@ import Link from "next/link";
 import { renderParagraphOrPoints } from "../projects/[slug]/page";
 import { Card, CardContent } from "@/components/ui/card";
 import { card, others, skills } from "@/Data/about";
+import { contact } from "@/Data/contact";
 
 export default function page() {
     return (
@@ -179,7 +180,7 @@ export default function page() {
                             </div>
                             <div className="relative max-w-6xl mx-auto my-12">
                                 <div className="absolute -top-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-                            {/* <div className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto mb-8 gap-10 ">
+                            <div className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto mb-8 gap-10 ">
                               {contact.map(({logo,title,link},index)=>{
                                 return(
                                   <a key={index} href={link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
@@ -197,7 +198,7 @@ export default function page() {
                                   </a>
                                 )
                               })}
-                            </div> */}
+                            </div>
                                 <div className="absolute -bottom-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
                             </div>
                         </div>
