@@ -94,7 +94,7 @@ export default function page() {
                         <div className="relative max-w-6xl mx-auto my-12">
                             <div className="absolute -top-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
                             <div className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto mb-8 gap-10 ">
-                                {contact.map(({logo,title,link},index)=>{
+                                {contact.map(({logo,title,head,info,link},index)=>{
                                     return(
                                         <Card key={index} className="group relative-h-[230-px] after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
                                              backdrop-blur-xl border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)]
@@ -110,7 +110,8 @@ export default function page() {
                                                     </div>
                                                 </div>
                                                     <div className="flex flex-col gap-3">
-                                                        <h3 className="text-2xl font-semibold">{title}</h3>
+                                                        <h3 className="text-2xl font-semibold">{head}</h3>
+                                                        
                                                     </div>
                                             </CardContent>
                                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
