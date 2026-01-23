@@ -143,10 +143,7 @@ export default function page() {
                             <div className="h-px w-32 bg-white/50" />
                         </div>
                         <p className="text-lg md:text-xl text-muted-foreground tracking-wide pt-4">
-                            Feel free to reach out if you'd like to collaborate, chat about tech, or just get
-                        </p>
-                        <p className="text-lg md:text-xl text-muted-foreground tracking-wide pt-3">
-                            to know each other.
+                            Life beyond code — the things that keep me inspired and balanced.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 ">{others.map((other,index)=>{
@@ -176,7 +173,7 @@ export default function page() {
                                 </h2>
                             </div>
                             <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-4">
-                                Feel free to reach out if you'd like to collaborate, chat about tech, or just get to know each other.
+                                Open to collaborations, opportunities, and tech conversations.
                             </div>
                             <div className="relative max-w-6xl mx-auto my-12">
                                 <div className="absolute -top-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
