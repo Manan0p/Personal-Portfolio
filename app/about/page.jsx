@@ -175,10 +175,7 @@ export default function page() {
                                 </h2>
                             </div>
                             <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-4">
-                                Get In Touch
-                            </div>
-                            <div className="mt-2 mb-10 text-lg md:text-xl font-medium text-white/90">
-                                Let's Build Something Amazing!
+                                Feel free to reach out if you'd like to collaborate, chat about tech, or just get to know each other.
                             </div>
                             <div className="relative max-w-6xl mx-auto my-12">
                                 <div className="absolute -top-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
