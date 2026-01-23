@@ -17,7 +17,7 @@ export default function page() {
 
                 <div className="relative z-10 container mx-auto px-4 md:px-6">
                     <div className="grid lg:grid-cols-2 gap-8 items-center">
-                        <div className="space-y-5 max-w-lg">
+                        <div className="space-y-5">
                             <div className="text-sm md:text-md lg:text-lg space-x-1 text-muted-foreground tracking-wide">
                                 <Link href="/">
                                     <Home className="inline mb-1 mr-1 h-4 w-4"/>
@@ -25,10 +25,10 @@ export default function page() {
                                 </Link> 
                                 Contact
                             </div>
-                            <h2 className="font-medium text-white tracking-normal text-left text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
-                            About
+                            <h2 className="gradient-title font-bold tracking-tighter text-left text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
+                                Let's Build Something <br /> Meaningful
                             </h2>
-                            <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide">
+                            <div className="max-w-lg text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide">
                             Open to collaborations, internships, freelance work,and interesting conversations around AI or product engineering.
                             </div>
                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
