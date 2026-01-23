@@ -167,23 +167,23 @@ export default function page() {
             <section className="relative w-full overflow-hidden pt-6 pb-10 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
                 <div className="pointer-events-none absolute inset-0 
                                 bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
-                      <div className="container mx-auto px-4 md:px-6">
+                    <div className="container mx-auto px-4 md:px-6">
                         <div className="text-center">
-                          <div className="flex items-center justify-center gap-6 mb-4 max-w-sm mx-auto">
-                            <div className="flex-1 h-px bg-white/40" />
-                            <h2 className="text-4xl font-bold tracking-wide bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text whitespace-nowrap">
-                              Let&apos;s Connect
-                            </h2>
-                            <div className="flex-1 h-px bg-white/40" />
-                          </div>
-                          <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-4">
-                            Get In Touch
-                          </div>
-                          <div className="mt-2 mb-10 text-lg md:text-xl font-medium text-white/90">
-                            Let's Build Something Amazing!
-                          </div>
-                          <div className="relative max-w-6xl mx-auto my-12">
-                            <div className="absolute -top-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+                            <div className="flex items-center justify-center gap-6 mb-4 max-w-sm mx-auto">
+                                <div className="flex-1 h-px bg-white/40" />
+                                <h2 className="text-4xl font-bold tracking-wide bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text whitespace-nowrap">
+                                    Let&apos;s Connect
+                                </h2>
+                                <div className="flex-1 h-px bg-white/40" />
+                            </div>
+                            <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-4">
+                                Get In Touch
+                            </div>
+                            <div className="mt-2 mb-10 text-lg md:text-xl font-medium text-white/90">
+                                Let's Build Something Amazing!
+                            </div>
+                            <div className="relative max-w-6xl mx-auto my-12">
+                                <div className="absolute -top-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
                             {/* <div className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto mb-8 gap-10 ">
                               {contact.map(({logo,title,link},index)=>{
                                 return(
@@ -203,13 +203,8 @@ export default function page() {
                                 )
                               })}
                             </div> */}
-                            <div className="absolute -bottom-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-                          </div>
-                          <a href="/Manan_Lall_CV.pdf" download="Manan_Lall_CV.pdf">
-                            <Button className="text-white mt-4 bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] transition-all" size="lg">
-                              Download Resume
-                            </Button>
-                          </a>
+                                <div className="absolute -bottom-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+                            </div>
                         </div>
                       </div>
                     </section>
