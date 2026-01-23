@@ -109,11 +109,17 @@ export default function page() {
                                                         <img src={logo} alt={title}/>
                                                     </div>
                                                 </div>
-                                                <div className="flex flex-col gap-3">
+                                                <div className="flex flex-col justify-between gap-2">
                                                     <h3 className="text-2xl font-semibold">{head}</h3>
                                                     <p className="text-base text-white/80 leading-relaxed mb-3 line-clamp-2">
                                                         {info}
                                                     </p>
+                                                
+                                                    <div className="mt-4 inline-flex items-center rounded-lg
+                                                                bg-white/5 px-4 py-2 text-sm border border-white/10
+                                                                text-white/80 backdrop-blur-md">
+                                                        {link}
+                                                    </div>
                                                 </div>
                                             </CardContent>
                                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
