@@ -105,12 +105,12 @@ export default function page() {
                                             <CardContent className="relative flex items-center gap-6 px-6 py-6">
                                                 <div className="flex-shrink-0 relative">
                                                     <div className="absolute inset-0 rounded-full bg-violet-500/25 blur-3xl" />
-                                                        <div className="relative transition-transform duration-300 group-hover:scale-[1.15]">
-                                                            {contact.logo}
-                                                        </div>
+                                                    <div className="group relative h-20 w-20 flex items-center justify-center rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
+                                                        <img src={logo} alt={title} className="h-auto w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-110"/>
                                                     </div>
+                                                </div>
                                                     <div className="flex flex-col gap-3">
-                                                        <h3 className="text-2xl font-semibold">{contact.title}</h3>
+                                                        <h3 className="text-2xl font-semibold">{title}</h3>
                                                     </div>
                                             </CardContent>
                                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
