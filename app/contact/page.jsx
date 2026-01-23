@@ -92,7 +92,6 @@ export default function page() {
                             <div className="h-px w-32 bg-white/50" />
                         </div>
                         <div className="relative mx-auto my-12">
-                            <div className="absolute -top-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
                             <div className="grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto mb-8 gap-10 ">
                                 {contact.map(({logo,title,head,info,link},index)=>{
                                     return(
@@ -102,25 +101,25 @@ export default function page() {
                                                                     before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
                                                                     before:opacity-0 hover:before:opacity-100 before:transition-opacity">
                                             <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
-                                            <CardContent className="relative flex flex-col gap-6 px-6 py-6 items-center">
-                                                <div className="group justify-between flex gap-5">
+                                            <CardContent className="relative flex flex-col gap-6 px-5 py-2 items-center">
+                                                <div className="group flex gap-5">
                                                     <div className="flex-shrink-0 relative">
                                                     <div className="absolute inset-0 rounded-full bg-violet-500/25 blur-3xl" />
                                                         <div className="group relative h-20 w-20 flex items-center justify-center rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
                                                             <img src={logo} alt={title}/>
                                                         </div>
                                                     </div>
-                                                    <div className="flex flex-col justify-between gap-1 items-start">
+                                                    <div className="flex flex-col justify-between items-start">
                                                         <h3 className="text-2xl font-semibold">{head}</h3>
-                                                        <p className="text-base text-left text-white/80 leading-relaxed mb-3 line-clamp-2">
+                                                        <p className="text-base text-left text-white/80 leading-relaxed line-clamp-2">
                                                             {info}
                                                         </p>
                                                     </div>
                                                 </div>
                                                 <div>
                                                     <a key={index} href={link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-                                                        <div className="mt-4 inline-flex items-center rounded-lg
-                                                                    bg-white/5 px-4 py-2 text-md border border-white/10
+                                                        <div className="mt-2 inline-flex items-center rounded-lg
+                                                                    bg-white/5 px-8 py-2 text-md border border-white/10
                                                                     text-white/80 backdrop-blur-md">
                                                             {title}
                                                         </div>
@@ -133,7 +132,6 @@ export default function page() {
                                     )
                                 })}
                             </div>
-                            <div className="absolute -bottom-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
                         </div>
                     </div>
                 </div>

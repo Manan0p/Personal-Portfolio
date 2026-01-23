@@ -11,7 +11,7 @@ export const contact = [
   {
     logo:"/contact/github.png",
     head: "GitHub",
-    info: "Explore my projects and code.",
+    info: "Explore my projects and contributions.",
     title: "github.com/Manan0p",
     link: "https://github.com/Manan0p",
   },
