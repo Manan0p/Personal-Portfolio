@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { badges, contact } from "@/Data/contact";
 import { Home } from "lucide-react";
 import Link from "next/link";
@@ -105,14 +106,11 @@ export default function page() {
                                                 <div className="flex-shrink-0 relative">
                                                     <div className="absolute inset-0 rounded-full bg-violet-500/25 blur-3xl" />
                                                         <div className="relative transition-transform duration-300 group-hover:scale-[1.15]">
-                                                            {data.icon}
+                                                            {contact.logo}
                                                         </div>
                                                     </div>
                                                     <div className="flex flex-col gap-3">
-                                                        <h3 className="text-2xl font-semibold">{data.title}</h3>
-                                                        <p className="text-base text-white/80 leading-relaxed mb-3 line-clamp-2">
-                                                        {data.path}
-                                                        </p>
+                                                        <h3 className="text-2xl font-semibold">{contact.title}</h3>
                                                     </div>
                                             </CardContent>
                                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
