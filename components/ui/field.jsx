@@ -95,9 +95,7 @@ function Field({
       {...(style && { style })}
       {...props}
     >
-      <div suppressHydrationWarning={true}>
-        {children}
-      </div>
+      {children}
     </div>
   );
 }
