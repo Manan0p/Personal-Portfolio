@@ -170,11 +170,9 @@ export default function page() {
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="text-center">
                             <div className="flex items-center justify-center gap-6 mb-4 max-w-sm mx-auto">
-                                <div className="flex-1 h-px bg-white/40" />
                                 <h2 className="text-4xl font-bold tracking-wide bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text whitespace-nowrap">
-                                    Let&apos;s Connect
+                                    Get In Touch
                                 </h2>
-                                <div className="flex-1 h-px bg-white/40" />
                             </div>
                             <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-4">
                                 Get In Touch
