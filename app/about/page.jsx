@@ -165,10 +165,6 @@ export default function page() {
                 </div>
             </section>
             <section className="relative w-full py-16 md:py-24 border-b border-white/10 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]">
-                      <div className="pointer-events-none absolute inset-0">
-                        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/40 to-transparent" />
-                        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/40 to-transparent" />
-                      </div>
                       <div className="container mx-auto px-4 md:px-6">
                         <div className="text-center">
                           <div className="flex items-center justify-center gap-6 mb-4 max-w-sm mx-auto">
