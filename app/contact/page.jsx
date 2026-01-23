@@ -136,6 +136,63 @@ export default function page() {
                     </div>
                 </div>
             </section>
+            <section className="relative w-full overflow-hidden pt-6 pb-10 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+                <div className="pointer-events-none absolute inset-0 
+                                bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
+                <div className="container mx-auto px-4 md:px-6">
+                    <div className="text-center">
+                        <div className="flex items-center justify-center gap-6 mb-4 max-w-sm mx-auto">
+                            <div className="h-px w-32 bg-white/50" />
+                            <h2 className="text-4xl font-bold tracking-wide bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text whitespace-nowrap">
+                                Lets Connect
+                            </h2>
+                            <div className="h-px w-32 bg-white/50" />
+                        </div>
+                        {/* <div className="relative mx-auto my-12">
+                            <div className="grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto mb-8 gap-10 ">
+                                {contact.map(({logo,title,head,info,link},index)=>{
+                                    return(
+                                        <Card key={index} className="group relative-h-[230-px] after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
+                                                                    backdrop-blur-xl border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)]
+                                                                    before:absolute before:inset-0 before:rounded-2xl
+                                                                    before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
+                                                                    before:opacity-0 hover:before:opacity-100 before:transition-opacity">
+                                            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
+                                            <CardContent className="relative flex flex-col gap-6 px-5 py-2 items-center">
+                                                <div className="group flex gap-5">
+                                                    <div className="flex-shrink-0 relative">
+                                                    <div className="absolute inset-0 rounded-full bg-violet-500/25 blur-3xl" />
+                                                        <div className="group relative h-20 w-20 flex items-center justify-center rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
+                                                            <img src={logo} alt={title}/>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex flex-col justify-between items-start">
+                                                        <h3 className="text-2xl font-semibold">{head}</h3>
+                                                        <p className="text-base text-left text-white/80 leading-relaxed line-clamp-2">
+                                                            {info}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <a key={index} href={link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                                                        <div className="mt-2 inline-flex items-center rounded-lg
+                                                                    bg-white/5 px-8 py-2 text-md border border-white/10
+                                                                    text-white/80 backdrop-blur-md">
+                                                            {title}
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                
+                                            </CardContent>
+                                            <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
+                                        </Card>
+                                    )
+                                })}
+                            </div>
+                        </div> */}
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
