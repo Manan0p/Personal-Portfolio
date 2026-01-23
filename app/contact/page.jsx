@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Field, FieldContent, FieldDescription, FieldGroup, FieldLabel, FieldLegend, FieldSet } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 import { badges, contact } from "@/Data/contact";
 import { Home } from "lucide-react";
 import Link from "next/link";
@@ -148,48 +152,94 @@ export default function page() {
                             </h2>
                             <div className="h-px w-32 bg-white/50" />
                         </div>
-                        {/* <div className="relative mx-auto my-12">
-                            <div className="grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto mb-8 gap-10 ">
-                                {contact.map(({logo,title,head,info,link},index)=>{
-                                    return(
-                                        <Card key={index} className="group relative-h-[230-px] after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
-                                                                    backdrop-blur-xl border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_80px_rgba(139,92,246,0.35)]
-                                                                    before:absolute before:inset-0 before:rounded-2xl
-                                                                    before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
-                                                                    before:opacity-0 hover:before:opacity-100 before:transition-opacity">
-                                            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
-                                            <CardContent className="relative flex flex-col gap-6 px-5 py-2 items-center">
-                                                <div className="group flex gap-5">
-                                                    <div className="flex-shrink-0 relative">
-                                                    <div className="absolute inset-0 rounded-full bg-violet-500/25 blur-3xl" />
-                                                        <div className="group relative h-20 w-20 flex items-center justify-center rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
-                                                            <img src={logo} alt={title}/>
-                                                        </div>
-                                                    </div>
-                                                    <div className="flex flex-col justify-between items-start">
-                                                        <h3 className="text-2xl font-semibold">{head}</h3>
-                                                        <p className="text-base text-left text-white/80 leading-relaxed line-clamp-2">
-                                                            {info}
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <a key={index} href={link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-                                                        <div className="mt-2 inline-flex items-center rounded-lg
-                                                                    bg-white/5 px-8 py-2 text-md border border-white/10
-                                                                    text-white/80 backdrop-blur-md">
-                                                            {title}
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                
-                                            </CardContent>
-                                            <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
-                                        </Card>
-                                    )
-                                })}
-                            </div>
-                        </div> */}
+                        <div className="relative mx-auto my-12 max-w-lg" id="send-message">
+                            <form>
+                                <FieldGroup>
+                                <FieldSet>
+                                    <FieldLegend>Let’s Connect</FieldLegend>
+                                    <FieldDescription>
+                                    Share a few details and I’ll get back to you soon.
+                                    </FieldDescription>
+
+                                    <FieldGroup>
+                                    {/* Name */}
+                                    <Field>
+                                        <FieldLabel htmlFor="contact-name">Your Name</FieldLabel>
+                                        <Input
+                                        id="contact-name"
+                                        placeholder="John Doe"
+                                        required
+                                        />
+                                    </Field>
+
+                                    {/* Email */}
+                                    <Field>
+                                        <FieldLabel htmlFor="contact-email">Email Address</FieldLabel>
+                                        <Input
+                                        id="contact-email"
+                                        type="email"
+                                        placeholder="john@example.com"
+                                        required
+                                        />
+                                    </Field>
+
+                                    {/* Dropdown */}
+                                    <Field>
+                                        <FieldLabel htmlFor="contact-reason">
+                                        What are you reaching out for?
+                                        </FieldLabel>
+                                        <Select defaultValue="collaboration">
+                                        <SelectTrigger id="contact-reason">
+                                            <SelectValue placeholder="Select a reason" />
+                                        </SelectTrigger>
+                                        <SelectContent>
+                                            <SelectGroup>
+                                            <SelectItem value="collaboration">
+                                                Collaboration
+                                            </SelectItem>
+                                            <SelectItem value="job">
+                                                Internship / Job Opportunity
+                                            </SelectItem>
+                                            <SelectItem value="freelance">
+                                                Freelance / Consulting
+                                            </SelectItem>
+                                            <SelectItem value="project">
+                                                Project Discussion
+                                            </SelectItem>
+                                            <SelectItem value="mentorship">
+                                                Mentorship / Guidance
+                                            </SelectItem>
+                                            <SelectItem value="general">
+                                                General Inquiry
+                                            </SelectItem>
+                                            </SelectGroup>
+                                        </SelectContent>
+                                        </Select>
+                                    </Field>
+
+                                    {/* Message */}
+                                    <Field>
+                                        <FieldLabel htmlFor="contact-message">Message</FieldLabel>
+                                        <Textarea
+                                        id="contact-message"
+                                        placeholder="Tell me a bit about what you have in mind..."
+                                        className="resize-none min-h-[120px]"
+                                        required
+                                        />
+                                    </Field>
+                                    </FieldGroup>
+                                </FieldSet>
+
+                                {/* Actions */}
+                                <Field orientation="horizontal">
+                                    <Button type="submit">Send Message →</Button>
+                                    <Button variant="outline" type="button">
+                                    Cancel
+                                    </Button>
+                                </Field>
+                                </FieldGroup> 
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
