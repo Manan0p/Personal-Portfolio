@@ -17,3 +17,9 @@ export const contact = [
     link: "https://linkedin.com/in/mananlall",
   },
 ];
+
+export const badges = [
+  {
+    stack: ["AI/ML", "Full-Stack", "Startups", "Open Source"]
+  }
+]
