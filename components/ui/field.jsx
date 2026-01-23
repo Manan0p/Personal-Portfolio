@@ -86,7 +86,7 @@ function Field({
   const { style, ...safeProps } = props;
   return (
     <div
-      role="group" suppressHydrationWarning
+      role="group" suppressHydrationWarning suppressContentEditableWarning
       data-slot="field"
       data-orientation={orientation}
       className={cn(fieldVariants({ orientation }), className)}

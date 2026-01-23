@@ -154,15 +154,16 @@ export default function page() {
                             </h2>
                             <div className="h-px w-32 bg-white/50" />
                         </div>
-                        <div className="relative mx-auto my-12 w-full max-w-lg" id="send-message">
+                        <div className="relative mx-auto my-12 w-full max-w-lg
+  rounded-2xl
+  border border-white/10
+  bg-gradient-to-br from-white/5 via-white/[0.02] to-transparent
+  backdrop-blur-xl
+  shadow-[0_0_40px_rgba(99,102,241,0.15)]
+  p-8" id="send-message">
                             <form>
                                 <FieldGroup>
                                 <FieldSet>
-                                    <FieldLegend>Let’s Connect</FieldLegend>
-                                    <FieldDescription>
-                                    Share a few details and I’ll get back to you soon.
-                                    </FieldDescription>
-
                                     <FieldGroup>
                                     {/* Name */}
                                     <Field>
