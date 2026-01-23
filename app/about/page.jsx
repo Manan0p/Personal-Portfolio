@@ -150,7 +150,7 @@ export default function page() {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 ">{others.map((other,index)=>{
                         return(
-                                <Card key={index} className="group relative h-[230px] overflow-hidden rounded-2xl bg-white/7 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
+                                <Card key={index} className="group relative h-[250px] overflow-hidden rounded-2xl bg-white/7 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
                                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
                                     <CardContent className={"relative flex h-full overflow-hidden px-5"}>
                                         <div className="relative z-10 flex flex-col max-w-[80%]">
