@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { badges } from "@/Data/contact";
 import { Home } from "lucide-react";
 import Link from "next/link";
@@ -41,6 +42,24 @@ export default function page() {
                                         {tech}
                                     </span>
                                 ))}
+                            </div>
+                            <div className="flex flex-wrap items-center gap-4 pt-2">
+                                <Link href="#send-message">
+                                    <Button
+                                    className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
+                                    size="lg"
+                                    >
+                                    Send a Message
+                                    </Button>
+                                </Link>
+                                <a href="/Manan_Lall_CV.pdf" download="Manan_Lall_CV.pdf">
+                                    <Button
+                                    className="text-white text-lg bg-transparent border border-white/25 rounded-lg px-6 py-3 hover:bg-white/5"
+                                    size="lg"
+                                    >
+                                    Download Resume
+                                    </Button>
+                                </a>
                             </div>
                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                         </div>
