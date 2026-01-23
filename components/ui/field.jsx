@@ -83,13 +83,15 @@ function Field({
   orientation = "vertical",
   ...props
 }) {
+  const { style, ...safeProps } = props;
   return (
     <div
-      role="group"
+      role="group" suppressHydrationWarning
       data-slot="field"
       data-orientation={orientation}
       className={cn(fieldVariants({ orientation }), className)}
-      {...props} />
+      {...safeProps}
+    />
   );
 }
 

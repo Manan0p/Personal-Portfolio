@@ -154,7 +154,7 @@ export default function page() {
                             </h2>
                             <div className="h-px w-32 bg-white/50" />
                         </div>
-                        <div className="relative mx-auto my-12 max-w-lg" id="send-message">
+                        <div className="relative mx-auto my-12 w-full max-w-lg" id="send-message">
                             <form>
                                 <FieldGroup>
                                 <FieldSet>
