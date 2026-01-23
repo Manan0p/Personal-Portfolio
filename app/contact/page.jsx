@@ -91,9 +91,9 @@ export default function page() {
                             </h2>
                             <div className="h-px w-32 bg-white/50" />
                         </div>
-                        <div className="relative max-w-6xl mx-auto my-12">
+                        <div className="relative mx-auto my-12">
                             <div className="absolute -top-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-                            <div className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto mb-8 gap-10 ">
+                            <div className="grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto mb-8 gap-10 ">
                                 {contact.map(({logo,title,head,info,link},index)=>{
                                     return(
                                         <Card key={index} className="group relative-h-[230-px] after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
@@ -102,25 +102,29 @@ export default function page() {
                                                                     before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
                                                                     before:opacity-0 hover:before:opacity-100 before:transition-opacity">
                                             <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
-                                            <CardContent className="relative flex items-center gap-6 px-6 py-6">
-                                                <div className="flex-shrink-0 relative">
+                                            <CardContent className="relative flex flex-col gap-6 px-6 py-6">
+                                                <div className="flex gap-5">
+                                                    <div className="flex-shrink-0 relative">
                                                     <div className="absolute inset-0 rounded-full bg-violet-500/25 blur-3xl" />
-                                                    <div className="group relative h-20 w-20 flex items-center justify-center rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
-                                                        <img src={logo} alt={title}/>
+                                                        <div className="group relative h-20 w-20 flex items-center justify-center rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
+                                                            <img src={logo} alt={title}/>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex flex-col justify-between gap-1 items-start">
+                                                        <h3 className="text-2xl font-semibold">{head}</h3>
+                                                        <p className="text-base text-left text-white/80 leading-relaxed mb-3 line-clamp-2">
+                                                            {info}
+                                                        </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex flex-col justify-between gap-2">
-                                                    <h3 className="text-2xl font-semibold">{head}</h3>
-                                                    <p className="text-base text-white/80 leading-relaxed mb-3 line-clamp-2">
-                                                        {info}
-                                                    </p>
-                                                
+                                                <div>
                                                     <div className="mt-4 inline-flex items-center rounded-lg
                                                                 bg-white/5 px-4 py-2 text-sm border border-white/10
                                                                 text-white/80 backdrop-blur-md">
                                                         {link}
                                                     </div>
                                                 </div>
+                                                
                                             </CardContent>
                                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                                         </Card>
