@@ -85,7 +85,7 @@ export default function page() {
                     <div className="text-center">
                         <div className="flex items-center justify-center gap-6 mb-4 max-w-sm mx-auto">
                             <h2 className="text-4xl font-bold tracking-wide bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text whitespace-nowrap">
-                                Get In Touch
+                                Reach Out
                             </h2>
                         </div>
                         <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-4">
