@@ -28,11 +28,8 @@ export default function page() {
                             <h2 className="font-medium text-white tracking-normal text-left text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
                             About
                             </h2>
-                            <div className="text-lg md:text-xl lg:text-2xl font-medium tracking-wider">
-                            Hey! I'm Manan👋🏻
-                            </div>
-                            <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wider">
-                            Driven by a curosity for AI and modern <br /> web technologies. I'm an AI/ML engineer and <br /> full-stack dveloper. I specialize in building <br /> intelligent systems that tackle genuine problems <br /> with real impact.
+                            <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide">
+                            Open to collaborations, internships, freelance work,and interesting conversations around AI or product engineering.
                             </div>
                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                         </div>
