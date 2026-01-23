@@ -64,15 +64,15 @@ export default function page() {
                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                         </div>
 
-                        {/* <div className="relative hidden lg:flex items-center justify-end pt-6">
+                        <div className="relative hidden lg:flex items-center justify-end pt-8">
                             <img
-                            src="/about.png"
+                            src="/contact.png"
                             alt="Hero Image"
                             className="w-[520px] md:w-[640px] lg:w-[720px]
                                                 drop-shadow-[0_40px_80px_rgba(168,85,247,0.35)]
                                                 select-none pointer-events-none"
                             />
-                        </div> */}
+                        </div>
                     </div>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/70 to-transparent" />
