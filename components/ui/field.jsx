@@ -91,10 +91,13 @@ function Field({
       data-slot="field"
       data-orientation={orientation}
       className={cn(fieldVariants({ orientation }), className)}
-      style={style}
+      suppressHydrationWarning={true}
+      {...(style && { style })}
       {...props}
     >
-      {children}
+      <div suppressHydrationWarning={true}>
+        {children}
+      </div>
     </div>
   );
 }

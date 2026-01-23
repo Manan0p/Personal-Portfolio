@@ -241,17 +241,6 @@ export default function page() {
                         </div>
                     </div>
                 </div>
-            </section>
-            <section className="relative w-full overflow-hidden pt-10 pb-12 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
-                
-                {/* Background glow */}
-                <div className="pointer-events-none absolute inset-0 z-0">
-                    <div className="absolute right-[-10%] bottom-[-35%] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle_at_30%_30%,
-                    rgba(236,72,153,0.85),rgba(168,85,247,0.6),rgba(99,102,241,0.35),transparent_65%)] blur-[140px]" />
-                    <div className="absolute right-0 bottom-0 h-full w-[55%] bg-gradient-to-bl from-pink-500/35 via-violet-500/25 to-transparent blur-2xl" />
-                </div>
-
-                {/* Content */}
                 <div className="relative z-10 mx-auto max-w-3xl text-center px-6">
                     
                     {/* Quote */}
