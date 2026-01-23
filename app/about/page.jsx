@@ -164,6 +164,57 @@ export default function page() {
                         })}</div>
                 </div>
             </section>
+            <section className="relative w-full py-16 md:py-24 border-b border-white/10 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912]">
+                      <div className="pointer-events-none absolute inset-0">
+                        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/40 to-transparent" />
+                        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/40 to-transparent" />
+                      </div>
+                      <div className="container mx-auto px-4 md:px-6">
+                        <div className="text-center">
+                          <div className="flex items-center justify-center gap-6 mb-4 max-w-sm mx-auto">
+                            <div className="flex-1 h-px bg-white/40" />
+                            <h2 className="text-4xl font-bold tracking-wide bg-[linear-gradient(90deg,#E5F0FF,#CBD5E1,#A5B4FC)] text-transparent bg-clip-text whitespace-nowrap">
+                              Let&apos;s Connect
+                            </h2>
+                            <div className="flex-1 h-px bg-white/40" />
+                          </div>
+                          <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide mb-4">
+                            Get In Touch
+                          </div>
+                          <div className="mt-2 mb-10 text-lg md:text-xl font-medium text-white/90">
+                            Let's Build Something Amazing!
+                          </div>
+                          <div className="relative max-w-6xl mx-auto my-12">
+                            <div className="absolute -top-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+                            {/* <div className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto mb-8 gap-10 ">
+                              {contact.map(({logo,title,link},index)=>{
+                                return(
+                                  <a key={index} href={link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                                    <div className="group relative flex flex-col items-center gap-3">
+                                      <div className="group relative h-20 w-20 flex items-center justify-center rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
+                                        <img src={logo} alt={title} className="h-auto w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)] transition-transform duration-300 group-hover:scale-110"/>
+                                      </div>
+                                      <p className="text-sm md:text-base text-muted-foreground">
+                                        {title}
+                                      </p>
+                                      {index !== contact.length - 1 && (
+                                        <div className="hidden lg:block absolute right-[-32px] top-1/2 -translate-y-1/2 h-24 w-px bg-white/30" />
+                                      )}
+                                    </div>
+                                  </a>
+                                )
+                              })}
+                            </div> */}
+                            <div className="absolute -bottom-6 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+                          </div>
+                          <a href="/Manan_Lall_CV.pdf" download="Manan_Lall_CV.pdf">
+                            <Button className="text-white mt-4 bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] transition-all" size="lg">
+                              Download Resume
+                            </Button>
+                          </a>
+                        </div>
+                      </div>
+                    </section>
         </div>
     )
 }
