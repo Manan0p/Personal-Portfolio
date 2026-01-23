@@ -102,8 +102,8 @@ export default function page() {
                                                                     before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
                                                                     before:opacity-0 hover:before:opacity-100 before:transition-opacity">
                                             <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
-                                            <CardContent className="relative flex flex-col gap-6 px-6 py-6">
-                                                <div className="flex gap-5">
+                                            <CardContent className="relative flex flex-col gap-6 px-6 py-6 items-center">
+                                                <div className="group justify-between flex gap-5">
                                                     <div className="flex-shrink-0 relative">
                                                     <div className="absolute inset-0 rounded-full bg-violet-500/25 blur-3xl" />
                                                         <div className="group relative h-20 w-20 flex items-center justify-center rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_50px_rgba(139,92,246,0.25)]">
@@ -118,11 +118,13 @@ export default function page() {
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className="mt-4 inline-flex items-center rounded-lg
-                                                                bg-white/5 px-4 py-2 text-sm border border-white/10
-                                                                text-white/80 backdrop-blur-md">
-                                                        {link}
-                                                    </div>
+                                                    <a key={index} href={link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                                                        <div className="mt-4 inline-flex items-center rounded-lg
+                                                                    bg-white/5 px-4 py-2 text-md border border-white/10
+                                                                    text-white/80 backdrop-blur-md">
+                                                            {title}
+                                                        </div>
+                                                    </a>
                                                 </div>
                                                 
                                             </CardContent>
