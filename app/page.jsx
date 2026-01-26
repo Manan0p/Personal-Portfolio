@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <main>
-        <section className="relative w-full overflow-hidden pt-14 md:pt-20 lg:pt-28 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+        <section className="relative w-full overflow-hidden pt-16 md:pt-20 lg:pt-28 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
           <div className="pointer-events-none absolute inset-0 z-0">
             <div className="absolute right-[-10%] top-[10%] h-[80%] w-[60%] bg-gradient-to-bl from-violet-500/30 via-indigo-500/20 to-transparent blur-3xl"/>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(99,102,241,0.15),transparent_60%)]"/>
@@ -29,7 +29,7 @@ export default function Home() {
                   Solving real world problems with cutting edge AI and <br /> modern web technologies.
                 </div>
                 
-                <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2 mb-12">
                   <Link href="/projects">
                     <Button
                       className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
@@ -49,7 +49,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex justify-center lg:justify-end items-center">
+              <div className="relative hidden lg:flex justify-center lg:justify-end items-center">
                 <Image
                   src="/final.png"
                   alt="Futuristic AI servers illustration"
