@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { MobileNav } from "@/components/mobile-nav";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -37,40 +38,44 @@ export default function RootLayout({ children }) {
             disableTransitionOnChange
           >
             <header className="fixed top-0 w-full border-b border-white/10 z-50 backdrop-blur-md supports-backdrop-filter:bg-background/60">
-              <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-                <Link href="/" className="flex items-center gap-2">
+              <nav className="container mx-auto px-3 sm:px-4 h-16 flex items-center justify-between">
+                <Link href="/" className="flex items-center gap-2 flex-shrink-0">
                   <Image src="/brand-mark.svg" alt="Logo" width={28} height={28} priority />
-                  <span className="font-semibold text-lg tracking-wide">Manan Lall</span>
+                  <span className="font-semibold text-base sm:text-lg tracking-wide">Manan Lall</span>
                 </Link>
 
-                <div className="flex items-center space-x-2 md:space-x-4">
+                {/* Desktop Navigation */}
+                <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
                   <Link href="/">
-                    <Button variant="ghost" className="text-md">
+                    <Button variant="ghost" className="text-sm lg:text-md">
                       Home
                     </Button>
                   </Link>
                   <Link href="/projects">
-                    <Button variant="ghost" className="text-md">
+                    <Button variant="ghost" className="text-sm lg:text-md">
                       Projects
                     </Button>
                   </Link>
                   <Link href="/blog">
-                    <Button variant="ghost" className="text-md">
+                    <Button variant="ghost" className="text-sm lg:text-md">
                       Blog
                     </Button>
                   </Link>
                   <Link href="/about">
-                    <Button variant="ghost" className="text-md">
+                    <Button variant="ghost" className="text-sm lg:text-md">
                       About
                     </Button>
                   </Link>
                   <Link href="/contact">
-                    <Button variant="ghost" className="text-md">
+                    <Button variant="ghost" className="text-sm lg:text-md">
                       Contact
                     </Button>
                   </Link>
                   {/* <ModeToggle /> */}
                 </div>
+
+                {/* Mobile Navigation */}
+                <MobileNav />
               </nav>
             </header>
             {children}
