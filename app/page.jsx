@@ -11,15 +11,15 @@ export default function Home() {
   return (
     <div>
       <main>
-        <section className="relative w-full overflow-hidden pt-12 md:pt-20 lg:pt-28 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+        <section className="relative w-full overflow-hidden pt-14 md:pt-20 lg:pt-28 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
           <div className="pointer-events-none absolute inset-0 z-0">
             <div className="absolute right-[-10%] top-[10%] h-[80%] w-[60%] bg-gradient-to-bl from-violet-500/30 via-indigo-500/20 to-transparent blur-3xl"/>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(99,102,241,0.15),transparent_60%)]"/>
           </div>
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid lg:grid-cols-2 gap-8 items-start">
-              <div className="space-y-5 pt-4">
-                <h2 className="gradient-title font-bold tracking-tighter text-left text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
+              <div className="space-y-5 pt-4 text-center md:text-left">
+                <h2 className="gradient-title font-bold tracking-tighter text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
                   Building Intelligent <br /> & Scalable Systems
                 </h2>
                 <div className="text-lg md:text-xl lg:text-2xl font-medium tracking-wide">
@@ -29,7 +29,7 @@ export default function Home() {
                   Solving real world problems with cutting edge AI and <br /> modern web technologies.
                 </div>
                 
-                <div className="flex flex-wrap items-center gap-4 pt-2">
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
                   <Link href="/projects">
                     <Button
                       className="text-white text-lg bg-blue-600 border border-white/25 rounded-lg px-6 py-3 shadow-sm hover:bg-blue-700"
