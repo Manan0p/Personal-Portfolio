@@ -9,8 +9,8 @@ import { contact } from "@/Data/contact";
 
 export default function page() {
     return (
-        <div>
-            <section className="relative w-full overflow-hidden pt-6 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+        <div className="relative">
+            <section className="relative w-full overflow-hidden pt-20 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
                 <div className="pointer-events-none absolute inset-0 z-0">
                     <div className="absolute right-[-10%] bottom-[-35%] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle_at_30%_30%,
                                     rgba(236,72,153,0.85),rgba(168,85,247,0.6),rgba(99,102,241,0.35),transparent_65%)] blur-[140px]"/>
@@ -38,7 +38,7 @@ export default function page() {
                             Hey! I'm Manan👋🏻
                             </div>
                             <div className="text-md md:text-lg lg:text-xl text-muted-foreground tracking-wider">
-                            Driven by a curosity for AI and modern <br /> web technologies. I'm an AI/ML engineer and <br /> full-stack dveloper. I specialize in building <br /> intelligent systems that tackle genuine problems <br /> with real impact.
+                            Driven by a curosity for AI and modern web technologies. I'm an AI/ML engineer and full-stack dveloper. I specialize in building intelligent systems that tackle genuine problems with real impact.
                             </div>
                             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-violet-400/60 to-transparent" />
                         </div>
