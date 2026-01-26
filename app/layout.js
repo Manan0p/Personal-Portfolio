@@ -47,27 +47,27 @@ export default function RootLayout({ children }) {
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
                   <Link href="/">
-                    <Button variant="ghost" className="text-sm lg:text-md">
+                    <Button variant="ghost" className="text-sm lg:text-lg">
                       Home
                     </Button>
                   </Link>
                   <Link href="/projects">
-                    <Button variant="ghost" className="text-sm lg:text-md">
+                    <Button variant="ghost" className="text-sm lg:text-lg">
                       Projects
                     </Button>
                   </Link>
                   <Link href="/blog">
-                    <Button variant="ghost" className="text-sm lg:text-md">
+                    <Button variant="ghost" className="text-sm lg:text-lg">
                       Blog
                     </Button>
                   </Link>
                   <Link href="/about">
-                    <Button variant="ghost" className="text-sm lg:text-md">
+                    <Button variant="ghost" className="text-sm lg:text-lg">
                       About
                     </Button>
                   </Link>
                   <Link href="/contact">
-                    <Button variant="ghost" className="text-sm lg:text-md">
+                    <Button variant="ghost" className="text-sm lg:text-lg">
                       Contact
                     </Button>
                   </Link>
