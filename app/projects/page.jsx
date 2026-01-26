@@ -8,7 +8,7 @@ import { caseStudies } from '@/Data/case_studies'
 const page = () => {
   return (
     <div className="relative">
-      <section className="relative noise w-full pt-14 md:pt-20 lg:pt-24 pb-0 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912] border-b border-white/10">
+      <section className="relative noise w-full overflow-hidden pt-14 md:pt-20 lg:pt-24 pb-0 bg-gradient-to-br from-[#0c0f1c] via-[#0a0d18] to-[#070912] border-b border-white/10">
         <div className="pointer-events-none absolute inset-0 z-0">
           <div className="absolute right-[-10%] bottom-[-35%] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle_at_30%_30%,
                           rgba(236,72,153,0.85),rgba(168,85,247,0.6),rgba(99,102,241,0.35),transparent_65%)] blur-[140px]"/>
@@ -37,12 +37,12 @@ const page = () => {
           </div>  
         </div>
       </section>
-      <section className="w-full py-16 md:py-24 lg:py-28 border-b border-white/10 bg-[radial-gradient(1200px_500px_at_50%_-100px,rgba(124,58,237,0.18),transparent_60%),radial-gradient(800px_400px_at_90%_20%,rgba(59,130,246,0.12),transparent_60%),linear-gradient(135deg,#0c0f1c,#070912)]">
+      <section className="w-full overflow-hidden py-16 md:py-24 lg:py-28 border-b border-white/10 bg-[radial-gradient(1200px_500px_at_50%_-100px,rgba(124,58,237,0.18),transparent_60%),radial-gradient(800px_400px_at_90%_20%,rgba(59,130,246,0.12),transparent_60%),linear-gradient(135deg,#0c0f1c,#070912)]">
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/40 to-transparent" />
             <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
-          <div className="container mx-auto px-4 md:px-6">
+          <div className="container mx-auto px-4 md:px-6 max-w-6xl">
             <div className="grid grid-cols-1 gap-6 max-w-auto mx-auto ">{caseStudies.map((project,index)=>{
               return(
                 <Card key={index} className="after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
@@ -51,8 +51,8 @@ const page = () => {
                                              before:bg-[radial-gradient(600px_200px_at_0%_0%,rgba(139,92,246,0.18),transparent_60%)]
                                              before:opacity-0 hover:before:opacity-100 before:transition-opacity">
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-transparent" />
-                  <CardContent className="relative flex items-center justify-between gap-8 px-6 py-6">
-                      <div className="flex flex-col gap-3 max-w-[75%]">
+                  <CardContent className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-8 px-6 py-6">
+                      <div className="flex flex-col gap-3 max-w-full md:max-w-[70%]">
                         <h3 className="text-3xl mb-1 font-semibold">{project.title}</h3>
                         <p className="text-base text-white/90 leading-relaxed mb-3 line-clamp-2">
                           {project.description}
@@ -65,8 +65,8 @@ const page = () => {
                           ))}
                         </div>
                       </div>
-                      <Link href={`/projects/${project.slug}`} className="shrink-0">
-                        <Button className="text-white mt-4 bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] transition-all" size="lg">
+                      <Link href={`/projects/${project.slug}`} className="shrink-0 w-full md:w-auto">
+                        <Button className="text-white w-full md:w-auto mt-4 bg-gradient-to-r from-blue-600 via-violet-600 to-pink-600 px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-[0_0_40px_rgba(139,92,246,0.45)] transition-all justify-center" size="lg">
                           View Case Study
                           <span className="text-lg">›</span>
                         </Button>
