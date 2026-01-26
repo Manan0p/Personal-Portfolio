@@ -12,8 +12,8 @@ import Link from "next/link";
 
 export default function page() {
     return (
-        <div>
-            <section className="relative w-full overflow-hidden pt-6 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
+        <div className="relative">
+            <section className="relative w-full overflow-hidden pt-20 md:pt-10 lg:pt-12 pb-0 bg-[linear-gradient(120deg,#060814_0%,#0a0d18_45%,#070912_100%)] border-b border-white/10">
                 <div className="pointer-events-none absolute inset-0 z-0">
                     <div className="absolute right-[-10%] bottom-[-35%] h-[680px] w-[680px] rounded-full bg-[radial-gradient(circle_at_30%_30%,
                                     rgba(236,72,153,0.85),rgba(168,85,247,0.6),rgba(99,102,241,0.35),transparent_65%)] blur-[140px]"/>
@@ -35,9 +35,9 @@ export default function page() {
                                 Contact
                             </div>
                             <h2 className="gradient-title font-bold tracking-tighter text-left text-4xl md:text-5xl lg:text-6xl leading-[1.1] md:leading-[1.1] lg:leading-[1.1]">
-                                Let's Build Something <br /> Meaningful
+                                Let's Build Something Meaningful
                             </h2>
-                            <div className="max-w-lg text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide">
+                            <div className="max-w-lg text-left text-md md:text-lg lg:text-xl text-muted-foreground tracking-wide">
                             Open to collaborations, internships, freelance work,and interesting conversations around AI or product engineering.
                             </div>
                             <div className="flex flex-wrap gap-4 pt-2">
