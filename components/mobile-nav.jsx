@@ -25,7 +25,7 @@ export function MobileNav() {
           <span className="sr-only">Toggle navigation menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="w-[300px]">
+      <SheetContent side="right" className="w-[200px]">
         <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
         <nav className="flex flex-col gap-4 mt-8">
           {links.map((link) => (
@@ -33,7 +33,7 @@ export function MobileNav() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="text-lg font-medium hover:text-primary transition-colors"
+              className="text-lg font-medium hover:text-primary transition-colors text-center"
             >
               {link.label}
             </Link>
