@@ -392,7 +392,6 @@ AI/ML Engineer | Full-Stack Developer
 
 - **Next.js** — amazing React framework
 - **Tailwind CSS** — utility-first styling
-- **Radix UI** — accessible component primitives
 - **shadcn/ui** — beautiful component patterns
 - **next-themes** — seamless theme switching
 - **Vercel** — hosting & deployment
