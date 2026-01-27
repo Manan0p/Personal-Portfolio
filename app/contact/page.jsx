@@ -98,7 +98,7 @@ export default function page() {
                             <div className="h-px w-32 bg-white/50" />
                         </div>
                         <div className="relative mx-auto my-12">
-                            <div className="grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto mb-8 gap-10 ">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto mb-8 gap-8 md:gap-10 ">
                                 {contact.map(({logo,title,head,info,link},index)=>{
                                     return(
                                         <Card key={index} className="group relative-h-[230-px] after:absolute after:bottom-0 after:left-6 after:right-6 after:h-px after:bg-gradient-to-r after:from-transparent after:via-white/25 after:to-transparent group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#161a2d]/90 via-[#111528]/90 to-[#0b0e1a]/90
