@@ -1,6 +1,6 @@
 # AI/ML Engineer Personal Portfolio
 
-**Personal portfolio** — a modern, AI-focused showcase of projects, expertise, and skills built with Next.js, Tailwind CSS, and Radix UI. Featuring a dark-themed hero section, featured projects, industry expertise display, and seamless theme switching.
+**Personal portfolio** — a modern, AI-focused showcase of projects, expertise, and skills built with Next.js, Tailwind CSS, and Shadcn UI. Featuring a dark-themed hero section, featured projects, industry expertise display, and seamless theme switching.
 
 🌐 **Live Demo:** https://personal-portfolio-lac-tau-34.vercel.app/
 
