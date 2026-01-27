@@ -241,8 +241,8 @@ export default async function Page({params}) {
                 <div className="pointer-events-none absolute inset-0 
                                 bg-gradient-to-r from-transparent via-violet-900/20 to-transparent z-[1]" />
                 <div className="relative z-10 container mx-auto px-4 md:px-6">
-                    <div className="grid lg:grid-cols-2 gap-12 items-start">
-                        <div className="space-y-8 max-w-xl">
+                    <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                        <div className="space-y-8 max-w-xl min-w-0">
                             <h3 className="text-lg md:text-2xl font-semibold text-violet-200 tracking-wide
                                            border-b border-white/10 pb-2 w-fit">
 
@@ -268,7 +268,7 @@ export default async function Page({params}) {
                             {renderParagraphOrPoints(project.experience)}
 
                         </div>
-                        <div className="relative space-y-10 max-w-lg lg:pl-10">
+                        <div className="relative space-y-10 max-w-lg min-w-0">
                             <div className="hidden lg:block absolute left-[-32px] top-0 h-full w-px
                                             bg-gradient-to-b from-transparent via-violet-400/25 to-transparent" />
                             <div className=" hidden lg:block absolute left-[-33px] top-0 h-full w-[3px]
@@ -302,11 +302,11 @@ export default async function Page({params}) {
                                     {project.live_link ? (
                                         <a href={project.live_link} target="_blank" rel="noreferrer">
                                             <Button
-                                                className="mb-5 w-full justify-start gap-3 text-white text-lg bg-blue-600 border border-white/25 rounded-lg shadow-sm hover:bg-blue-700"
+                                                className="mb-5 w-full justify-start gap-2 text-white text-sm md:text-lg bg-blue-600 border border-white/25 rounded-lg shadow-sm hover:bg-blue-700 overflow-hidden"
                                                 size="lg"
                                             >
-                                                Live Demo
-                                                <span className="ml-auto text-sm text-white truncate">
+                                                <span className="whitespace-nowrap">Live Demo</span>
+                                                <span className="ml-auto text-xs md:text-sm text-white truncate">
                                                     {project.live_link}
                                                 </span>
                                                 <span className="text-lg">›</span>
@@ -316,10 +316,10 @@ export default async function Page({params}) {
                                     {project.github_link ? (
                                         <a href={project.github_link} target="_blank" rel="noreferrer">
                                             <Button
-                                                className="w-full justify-start gap-3 text-white text-lg bg-transparent border border-white/25 rounded-lg hover:bg-white/5"
+                                                className="w-full justify-start gap-2 text-white text-sm md:text-lg bg-transparent border border-white/25 rounded-lg hover:bg-white/5 overflow-hidden"
                                                 size="lg"
                                             >
-                                                GitHub Repo
+                                                <span className="whitespace-nowrap">GitHub Repo</span>
                                             </Button>
                                         </a>
                                     ) : null}
