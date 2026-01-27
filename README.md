@@ -1,6 +1,6 @@
 # AI/ML Engineer Personal Portfolio
 
-**Manan Lall's professional portfolio** — a modern, AI-focused showcase of projects, expertise, and skills built with Next.js, Tailwind CSS, and Radix UI. Featuring a dark-themed hero section, featured projects, industry expertise display, and seamless theme switching.
+**Personal portfolio** — a modern, AI-focused showcase of projects, expertise, and skills built with Next.js, Tailwind CSS, and Shadcn UI. Featuring a dark-themed hero section, featured projects, industry expertise display, and seamless theme switching.
 
 🌐 **Live Demo:** https://personal-portfolio-lac-tau-34.vercel.app/
 
@@ -40,7 +40,7 @@ This portfolio is a personal brand hub that helps you:
 🌙 **Light/Dark Theme Toggle** — Theme persistence with `next-themes`  
 ⚡ **Fast & Optimized** — Built with Next.js App Router for performance  
 🔗 **Dynamic Routing** — Support for dynamic project detail pages  
-📊 **Accessibility** — Radix UI primitives for accessible components  
+📊 **Accessibility** — Shadcn UI primitives for accessible components  
 ✏️ **Easy Content Updates** — Edit projects, expertise, and contact via `Data/` files  
 🎯 **SEO-Ready** — Metadata and structured markup included  
 
@@ -64,7 +64,7 @@ Great for:
 - **React 19** — Modern UI library
 - **Tailwind CSS v4** — Utility-first styling
 - **tw-animate-css** — Extended animations
-- **Radix UI** — Accessible component primitives
+- **Shadcn UI** — Accessible component primitives
 - **lucide-react** — Beautiful icons
 - **next-themes** — Theme management (light/dark/system)
 - **clsx + tailwind-merge** — Utility class composition
@@ -392,7 +392,6 @@ AI/ML Engineer | Full-Stack Developer
 
 - **Next.js** — amazing React framework
 - **Tailwind CSS** — utility-first styling
-- **Radix UI** — accessible component primitives
 - **shadcn/ui** — beautiful component patterns
 - **next-themes** — seamless theme switching
 - **Vercel** — hosting & deployment
