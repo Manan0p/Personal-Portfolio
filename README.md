@@ -64,7 +64,7 @@ Great for:
 - **React 19** — Modern UI library
 - **Tailwind CSS v4** — Utility-first styling
 - **tw-animate-css** — Extended animations
-- **Radix UI** — Accessible component primitives
+- **Shadcn UI** — Accessible component primitives
 - **lucide-react** — Beautiful icons
 - **next-themes** — Theme management (light/dark/system)
 - **clsx + tailwind-merge** — Utility class composition
