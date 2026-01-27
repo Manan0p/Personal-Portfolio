@@ -40,7 +40,7 @@ This portfolio is a personal brand hub that helps you:
 🌙 **Light/Dark Theme Toggle** — Theme persistence with `next-themes`  
 ⚡ **Fast & Optimized** — Built with Next.js App Router for performance  
 🔗 **Dynamic Routing** — Support for dynamic project detail pages  
-📊 **Accessibility** — Radix UI primitives for accessible components  
+📊 **Accessibility** — Shadcn UI primitives for accessible components  
 ✏️ **Easy Content Updates** — Edit projects, expertise, and contact via `Data/` files  
 🎯 **SEO-Ready** — Metadata and structured markup included  
 
