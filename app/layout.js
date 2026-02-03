@@ -5,6 +5,7 @@ import { MobileNav } from "@/components/mobile-nav";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -80,6 +81,7 @@ export default function RootLayout({ children }) {
             </header>
             {children}
           </ThemeProvider>
+          <Analytics />
       </body>
     </html>
   );
