@@ -258,4 +258,99 @@ export const caseStudies = [
   },
 ]  
   },
+  {
+  slug: "linkedin-post-gen",
+  title: "LinkedIn Post Generator",
+  info: "AI Content Assistant",
+  description:
+    "An AI-powered LinkedIn content generator that helps users create engaging, professional posts tailored to their goals, tone, and audience in seconds.",
+  stack: ["Next.js", "React", "Tailwind CSS", "OpenAI API", "Vercel"],
+  image: "/mp/linkedin-post-gen-mockup.png",
+  alt: "LinkedIn Post Generator Dashboard",
+  live_link: "https://linkedin-post-gen.vercel.app/", // update if different
+  github_link: "https://github.com/Manan0p/LinkedIn-Post-Gen",
+  overview:
+    "LinkedIn Post Generator is an AI-driven content creation tool designed for students, professionals, and creators who want to write high-quality LinkedIn posts without struggling with wording, structure, or consistency. By leveraging large language models, the platform transforms simple ideas or prompts into polished LinkedIn-ready posts that match professional tone, engagement best practices, and personal branding goals.",
+  problem: {
+    intro: "Writing effective LinkedIn content is harder than it looks:",
+    points: [
+      "Users struggle to convert ideas into well-structured posts",
+      "Maintaining a professional yet engaging tone is difficult",
+      "Posting consistently requires time and creative effort",
+      "Many users overthink wording and never end up posting",
+      "Generic templates fail to capture personal voice or intent",
+    ],
+    outro:
+      "These challenges result in low posting frequency, weak engagement, and missed personal branding opportunities.",
+  },
+  solution: {
+    intro:
+      "LinkedIn Post Generator simplifies content creation using AI:",
+    points: [
+      "Enter a short idea, topic, or prompt",
+      "Select tone or intent (professional, personal, growth, announcement, etc.)",
+      "Generate a complete, well-structured LinkedIn post instantly",
+      "Refine or regenerate posts with minimal effort",
+    ],
+    outro:
+      "By reducing friction in the writing process, the platform enables users to focus on sharing ideas rather than struggling with wording.",
+  },
+  experience: {
+    intro: "Users can:",
+    points: [
+      "Generate LinkedIn posts in seconds from simple prompts",
+      "Create content aligned with professional LinkedIn standards",
+      "Experiment with different tones and styles effortlessly",
+      "Regenerate or tweak posts until they match personal voice",
+      "Copy and post directly to LinkedIn without extra formatting",
+    ],
+    outro:
+      "The experience is designed to feel fast, intuitive, and confidence-boosting — encouraging users to post more consistently.",
+  },
+  key_features: [
+    {
+      icon: <Sparkles />,
+      heading: "AI-Powered Post Generation",
+      oneliner:
+        "Transforms short ideas into complete, high-quality LinkedIn posts.",
+    },
+    {
+      icon: <MessageSquareText />,
+      heading: "Tone & Intent Control",
+      oneliner:
+        "Generate posts tailored to professional, personal, growth, or announcement styles.",
+    },
+    {
+      icon: <Brain />,
+      heading: "Context-Aware Writing",
+      oneliner:
+        "Understands prompts and produces coherent, structured content.",
+    },
+    {
+      icon: <LayoutDashboard />,
+      heading: "Clean, Minimal Interface",
+      oneliner:
+        "Focused UI that removes distractions from the writing process.",
+    },
+    {
+      icon: <Zap />,
+      heading: "Instant Generation",
+      oneliner:
+        "Creates LinkedIn-ready posts in seconds with one click.",
+    },
+    {
+      icon: <Tags />,
+      heading: "Engagement-Friendly Formatting",
+      oneliner:
+        "Uses spacing, flow, and clarity optimized for LinkedIn readability.",
+    },
+    {
+      icon: <Lock />,
+      heading: "Privacy-Friendly",
+      oneliner:
+        "Does not store user prompts or generated content permanently.",
+    },
+  ],
+}
 ];
+
